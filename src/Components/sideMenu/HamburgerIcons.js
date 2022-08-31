@@ -1,9 +1,16 @@
-import React from "react";
+import React, { useContext } from "react";
 import HamburgerIconsStyle from "./HamburgerIconsStyle";
+import SideMenuContext from "../../Store/SideMenuContext";
 
 const HamburgerIcons = () => {
+  const { openMenu, menuHandler } = useContext(SideMenuContext);
+
   return (
-    <HamburgerIconsStyle className="hamburgerIcon_cont">
+    <HamburgerIconsStyle
+      className="hamburgerIcon_cont"
+      onClick={menuHandler}
+      openMenu={openMenu}
+    >
       <svg
         width="25"
         height="15"
@@ -14,21 +21,21 @@ const HamburgerIcons = () => {
       >
         <path
           d="M1.90002 1.90002H24"
-          stroke="black"
+          stroke="white"
           stroke-width="3"
           stroke-linecap="round"
           stroke-linejoin="round"
         />
         <path
           d="M1.90002 7.95001H24"
-          stroke="black"
+          stroke="white"
           stroke-width="3"
           stroke-linecap="round"
           stroke-linejoin="round"
         />
         <path
           d="M1.90002 14H24"
-          stroke="black"
+          stroke="white"
           stroke-width="3"
           stroke-linecap="round"
           stroke-linejoin="round"
@@ -47,7 +54,7 @@ const HamburgerIcons = () => {
           x2="42.45"
           y2="-1"
           transform="matrix(-0.683157 0.730272 0.43379 0.901014 30 2)"
-          stroke="black"
+          stroke="white"
           stroke-width="4"
         />
         <line
@@ -55,7 +62,7 @@ const HamburgerIcons = () => {
           x2="42.45"
           y2="-1"
           transform="matrix(0.683157 0.730272 -0.43379 0.901014 1 2)"
-          stroke="black"
+          stroke="white"
           stroke-width="4"
         />
       </svg>

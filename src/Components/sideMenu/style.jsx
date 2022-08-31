@@ -7,15 +7,20 @@ const Style = styled.div`
   left: 0;
   top: 0;
   background-color: rgba(255, 255, 255, 0.8);
-  display: flex;
+  /* display: ${({ openMenu }) => (openMenu ? "flex" : "none")}; */
+  width: ${({ openMenu }) => (openMenu ? "70vw" : "0")};
+  overflow: hidden;
   flex-direction: column;
   align-items: center;
-  padding-top: 6rem;
+  padding-top: 4rem;
+  transition: width 0.5s ease-in-out;
   /* border: 2px solid; */
 
   div {
     padding: 2rem 1rem;
     margin-bottom: 1rem;
+    opacity: ${({ openMenu }) => (openMenu ? "1" : "0")};
+    transition: opacity 0.3s;
   }
 
   .hamburgerIcon_cont {
