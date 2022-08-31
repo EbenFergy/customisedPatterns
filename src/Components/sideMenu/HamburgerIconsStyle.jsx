@@ -1,10 +1,7 @@
 import styled from "styled-components";
 
 const HamburgerIconsStyle = styled.div`
-  position: absolute;
-  right: 0;
-  border: 2px solid;
-  padding: 0.5rem;
+  /* border: 2px solid; */
 
   svg {
     height: 1.2rem;

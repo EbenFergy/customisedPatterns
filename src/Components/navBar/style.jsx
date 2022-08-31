@@ -7,11 +7,20 @@ const Style = styled.div`
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
+  right: 0;
   height: 4rem;
+  padding: 0.2rem 1.5rem;
   /* z-index: 10; */
   background-color: rgb(2, 61, 147);
 
-  border: 2px solid red;
+  /* border: 2px solid red; */
+
+  img {
+    height: 1.5rem;
+  }
+
+  .logoCont {
+    /* border: 2px solid red; */
+  }
 `;
 export default Style;

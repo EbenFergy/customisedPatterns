@@ -1,11 +1,16 @@
 import React from "react";
 import Style from "./style";
-import bgGif from "../../Assets/bgGif.gif";
+import Button from "../../Components/Button/Button";
 
 const Home = () => {
   return (
     <Style>
-      <img src={bgGif} />
+      <div>
+        High Definition <br />
+        sketches
+        <p>Customized 2D and 3D designs</p>
+        <Button>Learn More</Button>
+      </div>
     </Style>
   );
 };
