@@ -7,6 +7,7 @@ const Style = styled.div`
   left: 0;
   top: 0;
   background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgb(2, 61, 147, 0.8);
   /* display: ${({ openMenu }) => (openMenu ? "flex" : "none")}; */
   width: ${({ openMenu }) => (openMenu ? "70vw" : "0")};
   overflow: hidden;
