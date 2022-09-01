@@ -2,10 +2,16 @@ import styled from "styled-components";
 
 const ServicesStyle = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   padding: 2rem 1rem;
+  border: 2px solid green;
 
-  .title {
+  .servicesTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-size: 1.2rem;
     font-weight: 600;
     .titleUnderline {
@@ -13,6 +19,11 @@ const ServicesStyle = styled.div`
       width: 5rem;
       margin: auto;
     }
+  }
+
+  .cards {
+    width: 50vw;
+    box-sizing: border-box;
   }
 `;
 export default ServicesStyle;
