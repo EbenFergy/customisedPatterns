@@ -7,7 +7,7 @@ const NavBar = () => {
   return (
     <Style>
       <div className="logoCont">
-        <img src={logo} />
+        <img src={logo} alt="logo" />
       </div>
       <HamburgerIcons />
     </Style>
