@@ -4,19 +4,26 @@ import bgGif from "../../Assets/bgGif.gif";
 const Style = styled.div`
   width: 100vw;
   height: 80vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background: linear-gradient(rgba(1, 45, 112, 0.3), rgba(1, 45, 112, 0.3)),
-    url(${bgGif});
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  font-size: 2.3rem;
-  font-weight: 700;
-  color: #ffffff;
+  /* border: 2px solid; */
+
+  .header {
+    width: 100vw;
+    height: 80vh;
+    background-size: cover;
+    background: linear-gradient(rgba(1, 45, 112, 0.3), rgba(1, 45, 112, 0.3)),
+      url(${bgGif});
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2.3rem;
+    font-weight: 700;
+    color: #ffffff;
+    /* border: 2px solid yellow; */
+  }
 
   p {
     font-size: 1rem;

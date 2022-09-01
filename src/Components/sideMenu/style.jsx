@@ -2,26 +2,31 @@ import styled from "styled-components";
 
 const Style = styled.div`
   height: 100vh;
-  width: 70vw;
   position: absolute;
   left: 0;
   top: 0;
-  background-color: rgba(255, 255, 255, 0.8);
-  background-color: rgb(2, 61, 147, 0.8);
-  /* display: ${({ openMenu }) => (openMenu ? "flex" : "none")}; */
-  width: ${({ openMenu }) => (openMenu ? "70vw" : "0")};
+  background-color: rgb(2, 61, 147, 0.98);
+  width: ${({ openMenu }) => (openMenu ? "78vw" : "0vw")};
   overflow: hidden;
   flex-direction: column;
   align-items: center;
-  padding-top: 4rem;
+  padding: 4rem 0;
+  box-sizing: border-box;
   transition: width 0.5s ease-in-out;
+  color: rgb(255, 255, 255);
   /* border: 2px solid; */
 
   div {
-    padding: 2rem 1rem;
-    margin-bottom: 1rem;
+    padding: 1.5rem 1rem;
+    margin: 1rem;
     opacity: ${({ openMenu }) => (openMenu ? "1" : "0")};
     transition: opacity 0.3s;
+    border-bottom: 0.8px solid rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+  }
+
+  div:hover {
+    background-color: rgba(255, 255, 255, 0.2);
   }
 
   .hamburgerIcon_cont {
