@@ -6,14 +6,15 @@ const ServicesStyle = styled.div`
   justify-content: center;
   align-items: center;
   padding: 2rem 1rem;
-  border: 2px solid green;
+  /* border: 2px solid green; */
 
   .servicesTitle {
     display: flex;
     flex-direction: column;
     align-items: center;
     font-size: 1.2rem;
-    font-weight: 600;
+    font-weight: 700;
+    margin-bottom: 1rem;
     .titleUnderline {
       border-bottom: 3px solid #e46060;
       width: 5rem;
@@ -22,7 +23,7 @@ const ServicesStyle = styled.div`
   }
 
   .cards {
-    width: 50vw;
+    width: 80vw;
     box-sizing: border-box;
   }
 `;

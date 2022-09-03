@@ -1,17 +1,17 @@
 import styled from "styled-components";
 
 const Style = styled.div`
-  height: 100vh;
-  position: absolute;
+  /* height: 100vh; */
+  position: fixed;
   left: 0;
   top: 0;
+  bottom: 0;
   background-color: rgb(2, 61, 147, 0.98);
   width: ${({ openMenu }) => (openMenu ? "78vw" : "0vw")};
   overflow: hidden;
   flex-direction: column;
   align-items: center;
   padding: 4rem 0;
-  box-sizing: border-box;
   transition: width 0.5s ease-in-out;
   color: rgb(255, 255, 255);
   /* border: 2px solid; */
