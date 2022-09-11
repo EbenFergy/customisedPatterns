@@ -8,6 +8,7 @@ const Style = styled.div`
   top: 0;
   left: 0;
   right: 0;
+  z-index: 9;
   height: 4rem;
   padding: 0.2rem 1.5rem;
   /* z-index: 10; */

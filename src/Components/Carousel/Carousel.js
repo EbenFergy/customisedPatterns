@@ -38,7 +38,7 @@ const Carousel = ({ carouselObj }) => {
       //   onSlideChange={() => console.log("slide change")}
       style={{
         maxWidth: "100%",
-        zIndex: "-1",
+        zIndex: "0",
         // border: "2px solid red",
       }}
     >
