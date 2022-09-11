@@ -21,10 +21,5 @@ const ServicesStyle = styled.div`
       margin: auto;
     }
   }
-
-  .cards {
-    width: 80vw;
-    box-sizing: border-box;
-  }
 `;
 export default ServicesStyle;

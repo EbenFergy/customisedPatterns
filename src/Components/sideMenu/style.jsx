@@ -14,6 +14,7 @@ const Style = styled.div`
   padding: 4rem 0;
   transition: width 0.5s ease-in-out;
   color: rgb(255, 255, 255);
+  z-index: 10;
   /* border: 2px solid; */
 
   div {

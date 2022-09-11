@@ -3,9 +3,9 @@ import styled from "styled-components";
 const Button = styled.button`
   width: auto;
   border-radius: 5px;
-  background-color: #e46060;
+  background: ${({ dormant }) => (dormant ? "none" : "#e46060")};
   /* background-color: rgb(25, 166, 100); */
-  border: none;
+  border: ${({ dormant }) => (dormant ? "1px solid #ffffff" : "none")};
   padding: 1.2rem 1.5rem;
   color: #ffff;
   font-weight: 700;

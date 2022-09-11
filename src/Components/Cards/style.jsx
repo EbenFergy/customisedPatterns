@@ -17,11 +17,13 @@ const Style = styled.div`
   .cardTitle {
     font-size: 1rem;
     font-weight: 600;
+    color: #2b2b2e;
   }
 
   .cardBody {
     padding: 0.5rem 1rem 1rem 1rem;
-    color: #212121;
+    color: #6b6b7b;
+    font-size: 14px;
   }
 `;
 export default Style;

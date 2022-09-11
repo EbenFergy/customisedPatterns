@@ -30,7 +30,13 @@ const Style = styled.div`
     font-weight: 600;
   }
 
-  /* border: 2px solid yellow; */
+  .leadCaption {
+    width: 100%;
+    background-color: #f6f7f9;
+    padding: 2rem 1rem;
+    text-align: center;
+    font-size: 1.2rem;
+  }
 `;
 
 export default Style;
