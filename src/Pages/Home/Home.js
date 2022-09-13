@@ -21,6 +21,9 @@ const Home = () => {
           Arch Omofoma Osagie <br /> Lead Architect
         </p>
       </div>
+      <div>Testimonials</div>
+      <div>Gallery</div>
+      <div>Order now</div>
       <Footer />
     </Style>
   );
