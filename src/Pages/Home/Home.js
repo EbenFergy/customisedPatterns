@@ -3,6 +3,7 @@ import Style from "./style";
 import Button from "../../Components/Button/Button";
 import Services from "./services/Services";
 import Footer from "../../Components/Footer/Footer";
+import Testimonials from "./testimonials/Testimonials";
 
 const Home = () => {
   return (
@@ -14,6 +15,8 @@ const Home = () => {
         <Button>Learn More</Button>
       </div>
       <Services />
+      <Testimonials />
+
       <div className="leadCaption">
         "With over 15 years of experience in delivering quality designs, we are
         sure to provide what you want with a quality compared to none"
@@ -21,7 +24,6 @@ const Home = () => {
           Arch Omofoma Osagie <br /> Lead Architect
         </p>
       </div>
-      <div>Testimonials</div>
       <div>Gallery</div>
       <div>Order now</div>
       <Footer />

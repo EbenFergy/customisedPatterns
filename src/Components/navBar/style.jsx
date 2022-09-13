@@ -9,22 +9,19 @@ const Style = styled.div`
   left: 0;
   right: 0;
   z-index: 9;
-  padding: 1rem 1.5rem;
+  padding: 0.75rem 1rem;
   /* z-index: 10; */
-  background-color: rgb(2, 61, 147);
-  /* background-color: rgb(255, 255, 255); */
+  background-color: rgba(2, 61, 147, 0.9);
+  /* background-color: rgba(255, 255, 255, 1); */
 
   /* border: 2px solid red; */
 
   img {
+    height: 2.5rem;
   }
 
   .logoCont {
-    border: 2px solid red;
-    svg {
-      height: 4rem;
-      border: 2px solid red;
-    }
+    /* border: 2px solid red; */
   }
 `;
 export default Style;
