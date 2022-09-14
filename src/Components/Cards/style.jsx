@@ -56,6 +56,7 @@ export const HorzStyle = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 0.5rem 1rem;
   }
 
   .cardImage {
@@ -66,11 +67,10 @@ export const HorzStyle = styled.div`
   .cardTitle {
     font-size: 14px;
     font-weight: 700;
-    padding: 0.5rem 1rem 0 1rem;
+    padding-bottom: 0.5rem;
   }
 
   .cardBody {
-    padding: 0.5rem 1rem 0.5rem 1rem;
     font-size: 0.75rem;
   }
 `;
