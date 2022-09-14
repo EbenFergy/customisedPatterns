@@ -37,6 +37,7 @@ export const HorzStyle = styled.div`
   text-align: start;
   padding: 0 0.5rem;
   color: #ffffff;
+  height: 7rem;
 
   /* From https://css.glass */
   background: rgba(255, 255, 255, 0.2);
