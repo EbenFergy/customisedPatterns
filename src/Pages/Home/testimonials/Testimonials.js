@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Style from "./style";
 import HorizontalCards from "../../../Components/Cards/HorizontalCards";
 import clientImg from "../../../Assets/clientImg.jpeg";
+import Form from "./Form";
 
 const testimonyObj = [
   {
@@ -20,6 +21,27 @@ const testimonyObj = [
     cardImage: clientImg,
     cardTitle: "Simeon Peters",
     cardBody: "Exactly what I wanted, I totally recommend them",
+  },
+  {
+    cardImage: clientImg,
+    cardTitle: "Rita Flores",
+    cardBody: "Top class delivery.",
+  },
+  {
+    cardImage: clientImg,
+    cardTitle: "Princess Afere",
+    cardBody: "Updates were made right on time. Best company.",
+  },
+  {
+    cardImage: clientImg,
+    cardTitle: "Yul Lings",
+    cardBody: "So happy with what I got. Exactly what I wanted.",
+  },
+  {
+    cardImage: clientImg,
+    cardTitle: "Kathryn Joes",
+    cardBody:
+      "Felt like shouting when I got the fiinal result. Thank you so much guys.",
   },
 ];
 
@@ -45,7 +67,7 @@ const Testimonials = () => {
           cardBody={testimonyObj[currentTest].cardBody}
         />
       </div>
-      <div></div>
+      <Form />
     </Style>
   );
 };
