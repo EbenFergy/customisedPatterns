@@ -4,6 +4,8 @@ export const Style = styled.div`
   /* width: 100%; */
   /* border: 2px solid red; */
   box-shadow: 0 0 0 2px #f2f2f7;
+  box-shadow: 0px 3.5px 5.5px rgba(0, 0, 0, 0.02),
+    0px 7px 23px rgba(0, 0, 0, 0.08);
   border-radius: 4px;
   text-align: center;
 

@@ -67,7 +67,9 @@ const Testimonials = () => {
           cardBody={testimonyObj[currentTest].cardBody}
         />
       </div>
-      <Form />
+      <div className="testimonialFormCont">
+        <Form />
+      </div>
     </Style>
   );
 };

@@ -4,6 +4,7 @@ import BG from "../../../Assets/testimonialImg.webp";
 const Style = styled.div`
   height: 90vh;
   /* border: 2px solid green; */
+  /* position: relative; */
 
   .testHeader {
     height: 60%;
@@ -31,6 +32,12 @@ const Style = styled.div`
       color: #e46060;
     }
   }
+
+  .testimonialFormCont {
+    position: relative;
+    padding: 1rem 0;
+    height: fit-content;
+  }
 `;
 
 export const FormStyle = styled.form`
@@ -41,10 +48,14 @@ export const FormStyle = styled.form`
   min-width: 14rem;
   max-width: 25rem;
   margin: auto;
-  position: relative;
+  position: absolute;
   top: -5rem;
+  left: 0;
+  right: 0;
   background-color: #ffffff;
   box-shadow: 0 4px 4px 0 #f2f2f7;
+  box-shadow: 0px 3.5px 5.5px rgba(0, 0, 0, 0.02),
+    0px 7px 23px rgba(0, 0, 0, 0.08);
   border-radius: 5px;
   /* border: 2px solid; */
 
@@ -57,7 +68,7 @@ export const FormStyle = styled.form`
   input {
     margin-bottom: 1rem;
     width: 90%;
-    padding: 0.5rem 0;
+    padding: 0.5rem 0 0.5rem 0.5rem;
   }
 
   Button {
