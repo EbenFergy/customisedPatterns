@@ -14,7 +14,7 @@ const Footer = () => {
         <Button dormant={true}>Send Request</Button>
       </Form>
       <hr style={{ opacity: "0.2", border: "0.5px solid" }} />
-      <div className="copyright">Copyright &copy; Customised Patterns</div>
+      <div className="copyright">Copyright &copy; Customised Patterns 2022</div>
     </Style>
   );
 };

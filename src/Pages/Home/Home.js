@@ -19,14 +19,16 @@ const Home = () => {
       <Testimonials />
 
       <div className="leadCaption">
-        "With over 15 years of experience in delivering quality designs, we are
-        sure to provide what you want with a quality compared to none"
-        <p>
-          Arch Omofoma Osagie <br /> Lead Architect
+        <p id="leadCaption">
+          "With over 15 years of experience in delivering quality designs, we
+          are sure to provide what you want with a quality compared to none"
+        </p>
+
+        <p id="leadTitle">
+          Arch Omofoma Osagie <br /> <span>Lead Architect</span>
         </p>
       </div>
       <Gallery />
-      <div>Order now</div>
       <Footer />
     </Style>
   );

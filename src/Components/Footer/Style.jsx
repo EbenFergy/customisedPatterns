@@ -21,7 +21,7 @@ export const Style = styled.div`
   }
 
   .copyright {
-    font-size: 0.75rem;
+    font-size: 0.625rem;
     font-weight: 300;
     text-align: center;
   }

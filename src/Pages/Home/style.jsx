@@ -10,7 +10,7 @@ const Style = styled.div`
     width: 100vw;
     height: 40rem;
     background-size: cover;
-    background: linear-gradient(rgba(1, 45, 112, 0.2), rgba(1, 45, 112, 0.2)),
+    background: linear-gradient(rgba(2, 26, 63, 0.6), rgba(2, 26, 63, 0.6)),
       url(${bgGif});
     background-repeat: no-repeat;
     background-size: cover;
@@ -37,6 +37,19 @@ const Style = styled.div`
     padding: 2rem 1rem;
     text-align: center;
     font-size: 1.2rem;
+
+    #leadCaption {
+      font-size: 14px;
+      font-weight: 400;
+      color: #6b6b7b;
+    }
+
+    #leadTitle {
+      color: #2b2b2e;
+      span {
+        font-weight: 400;
+      }
+    }
   }
 `;
 
