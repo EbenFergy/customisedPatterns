@@ -12,7 +12,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 // import "swiper/css/scrollbar";
 
-const Carousel = ({ carouselObj }) => {
+const Carousel = ({ carouselObj, Galleria }) => {
   return (
     <Swiper
       // install Swiper modules
@@ -51,6 +51,14 @@ const Carousel = ({ carouselObj }) => {
                 cardTitle={results.cardTitle}
                 cardBody={results.cardBody}
               />
+            </CarouselStyle>
+          </SwiperSlide>
+        ))}
+      {Galleria &&
+        Galleria.map((results) => (
+          <SwiperSlide key={results.name}>
+            <CarouselStyle>
+              <img src={results.image} alt={results.name} id="galleriaImg" />
             </CarouselStyle>
           </SwiperSlide>
         ))}

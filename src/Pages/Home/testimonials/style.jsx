@@ -2,7 +2,7 @@ import styled from "styled-components";
 import BG from "../../../Assets/testimonialImg.webp";
 
 const Style = styled.div`
-  height: 90vh;
+  height: 40rem;
   /* border: 2px solid green; */
   /* position: relative; */
 

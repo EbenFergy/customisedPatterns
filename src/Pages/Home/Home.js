@@ -4,6 +4,7 @@ import Button from "../../Components/Button/Button";
 import Services from "./services/Services";
 import Footer from "../../Components/Footer/Footer";
 import Testimonials from "./testimonials/Testimonials";
+import Gallery from "./Gallery/Gallery";
 
 const Home = () => {
   return (
@@ -24,7 +25,7 @@ const Home = () => {
           Arch Omofoma Osagie <br /> Lead Architect
         </p>
       </div>
-      <div>Gallery</div>
+      <Gallery />
       <div>Order now</div>
       <Footer />
     </Style>

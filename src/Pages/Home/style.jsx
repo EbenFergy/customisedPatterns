@@ -1,19 +1,20 @@
 import styled from "styled-components";
-import bgGif from "../../Assets/bgGif.gif";
+import bgGif from "../../Assets/bgGif3.jpeg";
 
 const Style = styled.div`
   width: 100vw;
-  height: 80vh;
+  /* height: 80vh; */
   /* border: 2px solid; */
 
   .header {
     width: 100vw;
-    height: 80vh;
+    height: 40rem;
     background-size: cover;
-    background: linear-gradient(rgba(1, 45, 112, 0.3), rgba(1, 45, 112, 0.3)),
+    background: linear-gradient(rgba(1, 45, 112, 0.2), rgba(1, 45, 112, 0.2)),
       url(${bgGif});
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: right;
     display: flex;
     flex-direction: column;
     justify-content: center;

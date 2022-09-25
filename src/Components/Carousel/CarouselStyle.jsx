@@ -15,4 +15,8 @@ export const CarouselStyle = styled.div`
   min-width: 10rem;
   box-sizing: border-box;
   margin-bottom: 2rem;
+
+  #galleriaImg {
+    width: 100%;
+  }
 `;
