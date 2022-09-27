@@ -18,8 +18,16 @@ const Carousel = ({ carouselObj, Galleria }) => {
       // install Swiper modules
       modules={[Pagination, Scrollbar, A11y]}
       breakpoints={{
-        300: {
+        400: {
           slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        500: {
+          slidesPerView: 1.3,
+          spaceBetween: 20,
+        },
+        550: {
+          slidesPerView: 1.6,
           spaceBetween: 20,
         },
         768: {

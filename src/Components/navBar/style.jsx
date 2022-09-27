@@ -11,13 +11,14 @@ const Style = styled.div`
   z-index: 9;
   padding: 0.75rem 1rem;
   /* z-index: 10; */
-  background-color: rgba(2, 61, 147, 1);
+  background-color: ${({ isHeaderVisible }) =>
+    isHeaderVisible ? "" : "rgba(2, 61, 147, 1)"};
   /* background-color: rgba(255, 255, 255, 1); */
 
   /* border: 2px solid red; */
 
   img {
-    height: 3rem;
+    height: 2.8rem;
   }
 
   .logoCont {

@@ -19,11 +19,16 @@ const Style = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    font-size: 2.3rem;
-    font-weight: 700;
+
     color: #ffffff;
     /* border: 2px solid yellow; */
+  }
+
+  #headerTitle {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 0;
   }
 
   p {
@@ -33,7 +38,7 @@ const Style = styled.div`
 
   .leadCaption {
     width: 100%;
-    background-color: #f6f7f9;
+    background-color: #f1f1f1;
     padding: 2rem 1rem;
     text-align: center;
     font-size: 1.2rem;
@@ -50,6 +55,10 @@ const Style = styled.div`
         font-weight: 400;
       }
     }
+  }
+
+  .smoosh {
+    border: 2px solid red;
   }
 `;
 

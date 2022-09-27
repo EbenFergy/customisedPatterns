@@ -3,9 +3,9 @@ import Style from "./style";
 import HamburgerIcons from "../sideMenu/HamburgerIcons";
 import logo from "../../Assets/Logo 2.svg";
 
-const NavBar = () => {
+const NavBar = ({ isHeaderVisible }) => {
   return (
-    <Style>
+    <Style isHeaderVisible={isHeaderVisible}>
       <div className="logoCont">
         <img src={logo} alt="logo" />
       </div>
