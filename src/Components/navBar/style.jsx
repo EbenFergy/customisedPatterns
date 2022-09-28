@@ -12,7 +12,8 @@ const Style = styled.div`
   padding: 0.75rem 1rem;
   /* z-index: 10; */
   background-color: ${({ isHeaderVisible }) =>
-    isHeaderVisible ? "" : "rgba(2, 61, 147, 1)"};
+    isHeaderVisible ? "rgba(2, 61, 147, 0)" : "rgba(2, 61, 147, 1)"};
+  transition: all 0.5s;
   /* background-color: rgba(255, 255, 255, 1); */
 
   /* border: 2px solid red; */

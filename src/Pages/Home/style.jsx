@@ -26,7 +26,7 @@ const Style = styled.div`
 
   #headerTitle {
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     font-weight: 800;
     margin-bottom: 0;
   }
@@ -39,9 +39,10 @@ const Style = styled.div`
   .leadCaption {
     width: 100%;
     background-color: #f1f1f1;
-    padding: 2rem 1rem;
+    padding: 4rem 2rem;
     text-align: center;
     font-size: 1.2rem;
+    margin: 2rem 0;
 
     #leadCaption {
       font-size: 14px;

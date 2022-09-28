@@ -16,7 +16,7 @@ const Home = () => {
   const options = useMemo(() => {
     return {
       root: null,
-      threshold: 0.8,
+      threshold: 0.85,
       rootMargin: "0px",
     };
   }, []);

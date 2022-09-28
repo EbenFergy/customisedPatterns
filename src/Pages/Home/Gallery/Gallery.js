@@ -1,4 +1,5 @@
 import React from "react";
+import Style from "./Style";
 import Carousel from "../../../Components/Carousel/Carousel";
 import img1 from "../../../Assets/Galleria/image 1.png";
 import img2 from "../../../Assets/Galleria/image 2.png";
@@ -18,9 +19,11 @@ const Galleria = [
 
 const Gallery = () => {
   return (
-    <div>
+    <Style>
+      <p>Gallery</p>
+      <div className="titleUnderline"></div>
       <Carousel Galleria={Galleria} />
-    </div>
+    </Style>
   );
 };
 
