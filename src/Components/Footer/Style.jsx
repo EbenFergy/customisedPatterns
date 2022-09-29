@@ -25,6 +25,32 @@ export const Style = styled.div`
     font-weight: 300;
     text-align: center;
   }
+
+  .footerLeft {
+    display: none;
+  }
+
+  @media only screen and (min-width: 650px) {
+    padding: 2rem 2rem;
+    .copyright {
+      font-size: 0.7rem;
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    .footerTop {
+      display: flex;
+    }
+
+    .footerLeft {
+      display: block;
+      width: 50%;
+
+      img[alt="logoImg"] {
+        max-height: 4rem;
+      }
+    }
+  }
 `;
 export const Form = styled.form`
   /* border: 2px solid yellow; */

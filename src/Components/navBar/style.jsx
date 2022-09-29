@@ -25,5 +25,9 @@ const Style = styled.div`
   .logoCont {
     /* border: 2px solid red; */
   }
+
+  @media only screen and (min-width: 500px) {
+    padding: 0.75rem 2rem;
+  }
 `;
 export default Style;

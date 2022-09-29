@@ -71,6 +71,11 @@ const Style = styled.div`
       padding: 2rem 4rem;
     }
   }
+  @media only screen and (min-width: 700px) {
+    .leadCaption {
+      padding: 2rem 6rem;
+    }
+  }
 `;
 
 export default Style;

@@ -16,6 +16,12 @@ const Style = styled.div`
     width: 5rem;
     margin: auto;
   }
+
+  @media only screen and (min-width: 768px) {
+    p {
+      font-size: ${FONTS.largeSubHeadingSize};
+    }
+  }
 `;
 
 export default Style;

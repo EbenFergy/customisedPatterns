@@ -30,8 +30,20 @@ const Carousel = ({ carouselObj, Galleria }) => {
           slidesPerView: 1.6,
           spaceBetween: 20,
         },
-        768: {
+        600: {
+          slidesPerView: 1.8,
+          spaceBetween: 20,
+        },
+        650: {
           slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        700: {
+          slidesPerView: 2.2,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 2.2,
           spaceBetween: 40,
         },
         1024: {

@@ -1,3 +1,4 @@
+import { FONTS } from "../../../styles/FONTS";
 import styled from "styled-components";
 
 const ServicesStyle = styled.div`
@@ -13,13 +14,19 @@ const ServicesStyle = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 1.2rem;
+    font-size: ${FONTS.subHeadingSize};
     font-weight: 900;
     margin-bottom: 1rem;
     .titleUnderline {
       border-bottom: 3px solid #e46060;
       width: 5rem;
       margin: auto;
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    .servicesTitle {
+      font-size: ${FONTS.largeSubHeadingSize};
     }
   }
 `;
