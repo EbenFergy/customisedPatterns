@@ -27,6 +27,12 @@ export const Style = styled.div`
     color: #6b6b7b;
     font-size: 14px;
   }
+
+  @media only screen and (min-width: 400px) {
+    .cardBody {
+      padding: 0.5rem 2rem 2rem 2rem;
+    }
+  }
 `;
 
 export const HorzStyle = styled.div`

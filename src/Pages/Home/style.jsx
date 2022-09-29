@@ -39,7 +39,7 @@ const Style = styled.div`
   .leadCaption {
     width: 100%;
     background-color: #f1f1f1;
-    padding: 4rem 2rem;
+    padding: 2rem 2rem;
     text-align: center;
     font-size: 1.2rem;
     margin: 2rem 0;
@@ -60,6 +60,16 @@ const Style = styled.div`
 
   .smoosh {
     border: 2px solid red;
+  }
+
+  @media only screen and (min-width: 600px) {
+    /* .header {
+      height: 100vh;
+    } */
+
+    .leadCaption {
+      padding: 2rem 4rem;
+    }
   }
 `;
 
