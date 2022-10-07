@@ -2,21 +2,21 @@ import React from "react";
 import { CarouselStyle } from "./CarouselStyle";
 import Cards from "../Cards/Cards";
 // import Swiper core and required modules
-import { Pagination, Scrollbar, A11y } from "swiper";
+import { Pagination, Scrollbar, A11y, Navigation } from "swiper";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
-// import "swiper/css/navigation";
+import "swiper/css/navigation";
 import "swiper/css/pagination";
 // import "swiper/css/scrollbar";
-
+import "./Carousel.css";
 const Carousel = ({ carouselObj, Galleria }) => {
   return (
     <Swiper
       // install Swiper modules
-      modules={[Pagination, Scrollbar, A11y]}
+      modules={[Pagination, Scrollbar, A11y, Navigation]}
       breakpoints={{
         400: {
           slidesPerView: 1,
@@ -43,7 +43,7 @@ const Carousel = ({ carouselObj, Galleria }) => {
           spaceBetween: 20,
         },
         768: {
-          slidesPerView: 2.2,
+          slidesPerView: 2.6,
           spaceBetween: 40,
         },
         1024: {
@@ -51,7 +51,7 @@ const Carousel = ({ carouselObj, Galleria }) => {
           spaceBetween: 20,
         },
       }}
-      navigation
+      navigation={true}
       pagination={true}
       scrollbar={{ draggable: true }}
       //   onSwiper={(swiper) => console.log(swiper)}

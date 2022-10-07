@@ -19,4 +19,8 @@ export const CarouselStyle = styled.div`
   #galleriaImg {
     width: 100%;
   }
+
+  .swiper-button-prev {
+    background-color: green;
+  }
 `;
