@@ -5,9 +5,3 @@
 .App {
   width: 100vw;
 }
-
-.swiper-button-next {
-  border: 2px solid green;
-  height: 2rem;
-  fill: coral;
-}

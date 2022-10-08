@@ -23,4 +23,18 @@ export const CarouselStyle = styled.div`
   .swiper-button-prev {
     background-color: green;
   }
+
+  .swiper-button-next {
+    border: 2px solid red;
+    width: 5rem;
+  }
+`;
+
+export const CarouselWrappper = styled.div`
+  #swiper-replace .swiper-button-next {
+    background-image: url(./next.svg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+  }
 `;

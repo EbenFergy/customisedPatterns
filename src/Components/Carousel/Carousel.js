@@ -11,7 +11,6 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 // import "swiper/css/scrollbar";
-import "./Carousel.css";
 const Carousel = ({ carouselObj, Galleria }) => {
   return (
     <Swiper
