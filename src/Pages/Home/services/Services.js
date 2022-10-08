@@ -1,6 +1,7 @@
 import React from "react";
 import ServicesStyle from "./ServicesStyle";
 import Carousel from "../../../Components/Carousel/Carousel";
+import SlickCarousel from "../../../Components/Carousel/SlickCarousel/SlickCarousel";
 import architectureImg from "../../../Assets/Services/architectureImg.jpeg";
 import civilImg from "../../../Assets/Services/civil.png";
 import surveyImg from "../../../Assets/Services/survey.png";
@@ -40,6 +41,7 @@ const Services = () => {
         Our Services <div className="titleUnderline"></div>
       </div>
       <Carousel carouselObj={carouselObj} />
+      <SlickCarousel carouselObj={carouselObj} />
     </ServicesStyle>
   );
 };
