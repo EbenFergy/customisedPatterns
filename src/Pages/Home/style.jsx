@@ -76,6 +76,12 @@ const Style = styled.div`
       padding: 2rem 6rem;
     }
   }
+
+  @media only screen and (min-width: 960px) {
+    .header {
+      height: 90vh;
+    }
+  }
 `;
 
 export default Style;

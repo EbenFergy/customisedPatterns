@@ -2,7 +2,12 @@ import styled from "styled-components";
 import { COLORS } from "../../styles/COLORS";
 
 export const MainSwiperCont = styled.div`
+  /* border: 2px solid green; */
   max-width: 100%;
+  position: relative;
+  .swiper {
+    /* border: 2px solid yellow; */
+  }
 
   .swiper-button-next,
   .swiper-button-prev {
@@ -10,6 +15,8 @@ export const MainSwiperCont = styled.div`
   }
 
   @media only screen and (min-width: 768px) {
+    padding: 1rem 1.5rem !important;
+
     :hover {
       .swiper-button-next,
       .swiper-button-prev {
@@ -27,7 +34,7 @@ export const MainSwiperCont = styled.div`
       font-weight: 800;
       /* display: block; */
       text-align: center;
-      color: ${COLORS.Gray};
+      color: ${COLORS.White};
       margin: 0;
     }
 
@@ -41,7 +48,19 @@ export const MainSwiperCont = styled.div`
       justify-content: center;
       background-color: ${COLORS.Blue};
       opacity: 0.85;
+
+      /* position: absolute; */
+      /* border: 2px solid red; */
     }
+    .swiper {
+      /* border: 2px solid purple; */
+      /* overflow: visible; */
+      position: static;
+    }
+  }
+
+  @media only screen and (min-width: 1024px) {
+    padding: 1rem 3rem !important;
   }
 `;
 

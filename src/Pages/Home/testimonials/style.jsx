@@ -4,7 +4,7 @@ import BG from "../../../Assets/testimonialImg.webp";
 const Style = styled.div`
   height: 40rem;
   /* border: 2px solid green; */
-  /* position: relative; */
+  position: relative;
 
   .testHeader {
     height: 60%;
@@ -12,31 +12,67 @@ const Style = styled.div`
       url(${BG});
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 3rem 1rem;
-
-    h6,
-    h3 {
-      margin: 0;
-      color: #ffffff;
-      /* align-self: flex-start; */
-      /* border: 2px solid; */
-    }
-
-    h3 {
-      margin-bottom: 1rem;
-    }
-    h6 {
-      color: #e46060;
-    }
   }
 
   .testimonialFormCont {
     position: relative;
     padding: 1rem 0;
     height: fit-content;
+  }
+
+  .testBody {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 100%;
+    padding: 0 0.5rem;
+
+    /* border: 2px solid red; */
+
+    .testBodyHeader {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 3rem 1rem;
+
+      h6,
+      h3 {
+        margin: 0;
+        color: #ffffff;
+        /* align-self: flex-start; */
+        /* border: 2px solid; */
+      }
+
+      h3 {
+        margin-bottom: 1rem;
+      }
+      h6 {
+        color: #e46060;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    height: 30rem;
+
+    .testBody {
+      display: flex;
+
+      > div {
+        width: 50%;
+      }
+    }
+
+    .testimonialFormCont {
+      /* border: 2px solid blue; */
+      height: 100%;
+      padding-top: 4rem;
+    }
+
+    .testHeader {
+      height: 70%;
+    }
   }
 `;
 
@@ -48,10 +84,7 @@ export const FormStyle = styled.form`
   min-width: 14rem;
   max-width: 25rem;
   margin: auto;
-  position: absolute;
-  top: -5rem;
-  left: 0;
-  right: 0;
+  position: relative;
   background-color: #ffffff;
   box-shadow: 0 4px 4px 0 #f2f2f7;
   box-shadow: 0px 3.5px 5.5px rgba(0, 0, 0, 0.02),
@@ -81,6 +114,12 @@ export const FormStyle = styled.form`
     position: absolute;
     bottom: 0;
     margin: 0;
+  }
+
+  @media only screen and (min-width: 768px) {
+    max-width: 28rem;
+    margin: auto;
+    height: 95%;
   }
 `;
 

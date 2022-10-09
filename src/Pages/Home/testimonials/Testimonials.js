@@ -57,18 +57,24 @@ const Testimonials = () => {
 
   return (
     <Style>
-      <div className="testHeader">
-        <h6>OUR HAPPY CLIENTS</h6>
-        <h3>What clients say about us</h3>
+      <div className="testHeader"></div>
 
-        <HorizontalCards
-          cardImage={testimonyObj[currentTest].cardImage}
-          cardTitle={testimonyObj[currentTest].cardTitle}
-          cardBody={testimonyObj[currentTest].cardBody}
-        />
-      </div>
-      <div className="testimonialFormCont">
-        <Form />
+      <div className="testBody">
+        <div>
+          <div className="testBodyHeader">
+            <h6>OUR HAPPY CLIENTS</h6>
+            <h3>What clients say about us</h3>
+
+            <HorizontalCards
+              cardImage={testimonyObj[currentTest].cardImage}
+              cardTitle={testimonyObj[currentTest].cardTitle}
+              cardBody={testimonyObj[currentTest].cardBody}
+            />
+          </div>
+        </div>
+        <div className="testimonialFormCont">
+          <Form />
+        </div>
       </div>
     </Style>
   );

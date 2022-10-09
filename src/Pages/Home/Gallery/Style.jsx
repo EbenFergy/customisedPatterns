@@ -22,6 +22,12 @@ const Style = styled.div`
       font-size: ${FONTS.largeSubHeadingSize};
     }
   }
+
+  @media only screen and (min-width: 1024px) {
+    /* border: 2px solid red; */
+    /* padding: 1rem 2rem; */
+    margin: 0 2rem;
+  }
 `;
 
 export default Style;
