@@ -53,14 +53,14 @@ const Testimonials = () => {
     setCurrentTest(chosen);
   };
 
-  setTimeout(selectTestimony, 3000);
+  setTimeout(selectTestimony, 5000);
 
   return (
     <Style>
       <div className="testHeader"></div>
 
       <div className="testBody">
-        <div>
+        <div className="testBodyHeaderCont">
           <div className="testBodyHeader">
             <h6>OUR HAPPY CLIENTS</h6>
             <h3>What clients say about us</h3>

@@ -7,6 +7,7 @@ export const MainSwiperCont = styled.div`
   position: relative;
   .swiper {
     /* border: 2px solid yellow; */
+    z-index: -100;
   }
 
   .swiper-button-next,

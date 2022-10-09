@@ -81,6 +81,20 @@ const Style = styled.div`
     .header {
       height: 90vh;
     }
+
+    #headerTitle {
+      font-size: 40px;
+    }
+
+    p {
+      font-size: 20px;
+      font-weight: 500;
+    }
+  }
+  @media only screen and (min-width: 1280px) {
+    #headerTitle {
+      font-size: 60px;
+    }
   }
 `;
 

@@ -58,6 +58,7 @@ const Style = styled.div`
 
     .testBody {
       display: flex;
+      flex-direction: row-reverse;
 
       > div {
         width: 50%;
@@ -67,7 +68,7 @@ const Style = styled.div`
     .testimonialFormCont {
       /* border: 2px solid blue; */
       height: 100%;
-      padding-top: 4rem;
+      padding-top: 2rem;
     }
 
     .testHeader {
@@ -118,8 +119,8 @@ export const FormStyle = styled.form`
 
   @media only screen and (min-width: 768px) {
     max-width: 28rem;
-    margin: auto;
     height: 95%;
+    right: 0;
   }
 `;
 

@@ -22,6 +22,11 @@ const Style = styled.div`
       font-size: ${FONTS.largeSubHeadingSize};
     }
   }
+  @media only screen and (min-width: 960px) {
+    p {
+      font-size: ${FONTS.largerSubHeadingSize};
+    }
+  }
 
   @media only screen and (min-width: 1024px) {
     /* border: 2px solid red; */
