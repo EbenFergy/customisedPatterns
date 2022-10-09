@@ -43,4 +43,13 @@ export const SlickStyle = styled.div`
     width: 2rem;
     height: 5rem;
   }
+
+  @media only screen and (min-width: 768px) {
+    .slick-slide > div {
+      margin: 0 10px;
+    }
+    .slick-list {
+      margin: 0 10px;
+    }
+  }
 `;
