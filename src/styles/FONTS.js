@@ -3,4 +3,5 @@ export const FONTS = {
   subHeadingWeight: "900",
   largeSubHeadingSize: "1.5rem",
   largerSubHeadingSize: "2rem",
+  bodySize: "14px",
 };

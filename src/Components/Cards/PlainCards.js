@@ -1,12 +1,12 @@
 import React from "react";
 import { PlainCardsStyle } from "./style";
 
-const PlainCards = () => {
+const PlainCards = ({ image, title, body }) => {
   return (
     <PlainCardsStyle>
-      <div className="PlainCardHead"></div>
-      <div className="PlainCardTitle"></div>
-      <div className="PlainCardBody"></div>
+      <div className="PlainCardHead">{image}</div>
+      <div className="PlainCardTitle">{title}</div>
+      <div className="PlainCardBody">{body}</div>
     </PlainCardsStyle>
   );
 };

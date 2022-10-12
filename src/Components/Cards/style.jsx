@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { COLORS } from "../../styles/COLORS";
+import { FONTS } from "../../styles/FONTS";
 
 export const Style = styled.div`
   /* width: 100%; */
@@ -88,4 +89,34 @@ export const HorzStyle = styled.div`
 
 export const PlainCardsStyle = styled.div`
   border-bottom: 4px solid ${COLORS.Blue};
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  :hover {
+    .PlainCardTitle {
+      color: ${COLORS.Blue};
+    }
+  }
+
+  .PlainCardHead {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 3rem;
+    background-color: ${COLORS.Gray};
+  }
+
+  .PlainCardTitle {
+    color: ${COLORS.DarkGray};
+    font-weight: 800;
+    font-size: ${FONTS.subHeadingSize};
+  }
+
+  .PlainCardBody {
+    color: ${COLORS.FontBody};
+    font-size: ${FONTS.bodySize};
+    text-align: center;
+  }
 `;
