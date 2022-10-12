@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { COLORS } from "../../styles/COLORS";
 
 export const Style = styled.div`
   /* width: 100%; */
@@ -83,4 +84,8 @@ export const HorzStyle = styled.div`
   .cardBody {
     font-size: 0.75rem;
   }
+`;
+
+export const PlainCardsStyle = styled.div`
+  border-bottom: 4px solid ${COLORS.Blue};
 `;
