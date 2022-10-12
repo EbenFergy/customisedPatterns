@@ -1,45 +1,57 @@
 import React from "react";
 import ServicesStyle from "./ServicesStyle";
-import Carousel from "../../../Components/Carousel/Carousel";
-import architectureImg from "../../../Assets/Services/architectureImg.jpeg";
-import civilImg from "../../../Assets/Services/civil.png";
-import surveyImg from "../../../Assets/Services/survey.png";
-import realEstateImg from "../../../Assets/Services/realEstate.png";
-import generalSupplyImg from "../../../Assets/Services/generalSupply.png";
+import PlainCards from "../../../Components/Cards/PlainCards";
+import architect from "../../../Assets/ServicesSVG/architect.svg";
+import architectColor from "../../../Assets/ServicesSVG/architectColor.svg";
+import engineering from "../../../Assets/ServicesSVG/engineering.svg";
+import engineeringColor from "../../../Assets/ServicesSVG/engineeringColor.svg";
+import realEstate from "../../../Assets/ServicesSVG/realEstate.svg";
+import realEstateColor from "../../../Assets/ServicesSVG/realEstateColor.svg";
+import supplies from "../../../Assets/ServicesSVG/supplies.svg";
+import suppliesColor from "../../../Assets/ServicesSVG/suppliesColor.svg";
+import survey from "../../../Assets/ServicesSVG/survey.svg";
+import surveyColor from "../../../Assets/ServicesSVG/surveyColor.svg";
 
 const Services = () => {
-  const archBody =
+  const cardBody =
     "Our Portfolio Is Comprised of Home Plans from Designers and Architects. Search our collection of 30k house plans by 200 designers.";
 
-  const carouselObj = [
+  const servicesObj = [
     {
-      cardImage: architectureImg,
-      cardTitle: "Architecture",
-      cardBody: archBody,
+      title: "Architect",
+      image: architect,
+      body: cardBody,
     },
     {
-      cardImage: civilImg,
-      cardTitle: "Engineering",
-      cardBody: archBody,
-    },
-    { cardImage: surveyImg, cardTitle: "Surveying", cardBody: archBody },
-    {
-      cardImage: realEstateImg,
-      cardTitle: "Real Estate",
-      cardBody: archBody,
+      title: "Engineering",
+      image: engineering,
+      body: cardBody,
     },
     {
-      cardImage: generalSupplyImg,
-      cardTitle: "General Supplies",
-      cardBody: archBody,
+      title: "Real Estate",
+      image: realEstate,
+      body: cardBody,
+    },
+    {
+      title: "Supplies",
+      image: supplies,
+      body: cardBody,
+    },
+    {
+      title: "Survey",
+      image: survey,
+      body: cardBody,
     },
   ];
   return (
     <ServicesStyle>
-      <div className="servicesTitle">
-        Our Services <div className="titleUnderline"></div>
-      </div>
-      <Carousel carouselObj={carouselObj} />
+      {servicesObj.map((service) => (
+        <PlainCards
+          image={service.image}
+          title={service.title}
+          body={service.body}
+        />
+      ))}
     </ServicesStyle>
   );
 };
