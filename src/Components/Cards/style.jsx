@@ -101,8 +101,6 @@ export const PlainCardsStyle = styled.div`
   background-color: ${COLORS.White};
   height: 25rem;
   box-shadow: ${SHADOWS.CARDSHADOW};
-  border-bottom: 5px solid ${COLORS.Blue};
-
   /* border-top: 1px solid ${COLORS.Blue}; */
 
   :hover {
@@ -140,5 +138,26 @@ export const PlainCardsStyle = styled.div`
     color: ${COLORS.FontBody};
     font-size: ${FONTS.bodySize};
     text-align: center;
+  }
+`;
+
+export const PlainHorzStyle = styled.div`
+  display: flex;
+  position: absolute;
+  bottom: 8rem;
+  div {
+    padding: 2rem;
+  }
+  .plain {
+    background-color: ${COLORS.Blue};
+  }
+
+  .glass {
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
   }
 `;

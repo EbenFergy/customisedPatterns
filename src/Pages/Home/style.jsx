@@ -20,7 +20,7 @@ const Style = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    position: relative;
     color: #ffffff;
     /* border: 2px solid yellow; */
   }
