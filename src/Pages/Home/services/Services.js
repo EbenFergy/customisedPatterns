@@ -14,7 +14,7 @@ import surveyColor from "../../../Assets/ServicesSVG/surveyColor.svg";
 
 const Services = () => {
   const cardBody =
-    "Our Portfolio Is Comprised of Home Plans from Designers and Architects. Search our collection of 30k house plans by 200 designers.";
+    "Our Portfolio Is Comprised of Home Plans from Designers and Architects. ";
 
   const servicesObj = [
     {
@@ -32,11 +32,11 @@ const Services = () => {
       image: realEstate,
       body: cardBody,
     },
-    {
-      title: "Supplies",
-      image: supplies,
-      body: cardBody,
-    },
+    // {
+    //   title: "Supplies",
+    //   image: supplies,
+    //   body: cardBody,
+    // },
     {
       title: "Survey",
       image: survey,

@@ -7,6 +7,7 @@ import Testimonials from "./testimonials/Testimonials";
 import Gallery from "./Gallery/Gallery";
 import NavBar from "../../Components/navBar/NavBar";
 import Clients from "./Clients/Clients";
+import AboutUs from "./AboutUs/AboutUs";
 
 const Home = () => {
   const [isHeaderVisible, setIsHeaderVisible] = useState(true);
@@ -49,8 +50,9 @@ const Home = () => {
         <p>Customized 2D and 3D designs</p>
         <Button>Learn More</Button>
       </div>
-      <Clients />
+      {/* <Clients /> */}
       <Services />
+      <AboutUs />
       <Testimonials />
 
       <div className="leadCaption">

@@ -4,7 +4,9 @@ import { PlainCardsStyle } from "./style";
 const PlainCards = ({ image, title, body }) => {
   return (
     <PlainCardsStyle>
-      <div className="PlainCardHead">{image}</div>
+      <div className="PlainCardHead">
+        <img src={image} />
+      </div>
       <div className="PlainCardTitle">{title}</div>
       <div className="PlainCardBody">{body}</div>
     </PlainCardsStyle>

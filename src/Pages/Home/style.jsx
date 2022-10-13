@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import bgGif from "../../Assets/bgGif3.jpeg";
+import { COLORS } from "../../styles/COLORS";
 
 const Style = styled.div`
   width: 100vw;
@@ -10,7 +11,7 @@ const Style = styled.div`
     width: 100vw;
     height: 40rem;
     background-size: cover;
-    background: linear-gradient(rgba(2, 26, 63, 0.6), rgba(2, 26, 63, 0.6)),
+    background: linear-gradient(rgba(2, 18, 44, 0.7), rgba(2, 26, 63, 0.7)),
       url(${bgGif});
     background-repeat: no-repeat;
     background-size: cover;

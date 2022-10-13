@@ -7,6 +7,8 @@ const ServicesStyle = styled.div`
   align-items: center;
   padding: 2rem 1rem;
   color: #2b2b2e;
+  background-color: #dee2e7;
+
   /* border: 2px solid green; */
 
   .servicesTitle {

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { COLORS } from "../../styles/COLORS";
 import { FONTS } from "../../styles/FONTS";
+import { SHADOWS } from "../../styles/SHADOWS";
 
 export const Style = styled.div`
   /* width: 100%; */
@@ -88,14 +89,27 @@ export const HorzStyle = styled.div`
 `;
 
 export const PlainCardsStyle = styled.div`
-  border-bottom: 4px solid ${COLORS.Blue};
-  padding: 2rem 0;
+  padding: 4rem 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
+  /* margin: 0 1rem; */
+  max-width: 20rem;
+  position: relative;
+  bottom: -5rem;
+  background-color: ${COLORS.White};
+  height: 25rem;
+  box-shadow: ${SHADOWS.CARDSHADOW};
+  border-bottom: 5px solid ${COLORS.Blue};
+
+  /* border-top: 1px solid ${COLORS.Blue}; */
 
   :hover {
+    border-bottom: 5px solid ${COLORS.Blue};
+    transform: translateZ(0);
+    z-index: 2;
+
     .PlainCardTitle {
       color: ${COLORS.Blue};
     }
@@ -106,12 +120,20 @@ export const PlainCardsStyle = styled.div`
     height: 6rem;
     border-radius: 3rem;
     background-color: ${COLORS.Gray};
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 80px;
+    }
   }
 
   .PlainCardTitle {
     color: ${COLORS.DarkGray};
     font-weight: 800;
     font-size: ${FONTS.subHeadingSize};
+    margin: 1rem 0;
   }
 
   .PlainCardBody {
