@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import bgGif from "../../Assets/bgGif3.jpeg";
-import { COLORS } from "../../styles/COLORS";
 
 const Style = styled.div`
   width: 100vw;
