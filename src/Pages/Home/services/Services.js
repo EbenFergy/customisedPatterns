@@ -1,18 +1,18 @@
 import React from "react";
 import ServicesStyle from "./ServicesStyle";
 import Carousel from "../../../Components/Carousel/Carousel";
-import SwiperCarousel from "../../../Components/Carousel/SwiperCarousel";
-import PlainCards from "../../../Components/Cards/PlainCards";
+// import SwiperCarousel from "../../../Components/Carousel/SwiperCarousel";
+// import PlainCards from "../../../Components/Cards/PlainCards";
 import architect from "../../../Assets/ServicesSVG/architect.svg";
-import architectColor from "../../../Assets/ServicesSVG/architectColor.svg";
+// import architectColor from "../../../Assets/ServicesSVG/architectColor.svg";
 import engineering from "../../../Assets/ServicesSVG/engineering.svg";
-import engineeringColor from "../../../Assets/ServicesSVG/engineeringColor.svg";
+// import engineeringColor from "../../../Assets/ServicesSVG/engineeringColor.svg";
 import realEstate from "../../../Assets/ServicesSVG/realEstate.svg";
-import realEstateColor from "../../../Assets/ServicesSVG/realEstateColor.svg";
-import supplies from "../../../Assets/ServicesSVG/supplies.svg";
-import suppliesColor from "../../../Assets/ServicesSVG/suppliesColor.svg";
+// import realEstateColor from "../../../Assets/ServicesSVG/realEstateColor.svg";
+// import supplies from "../../../Assets/ServicesSVG/supplies.svg";
+// import suppliesColor from "../../../Assets/ServicesSVG/suppliesColor.svg";
 import survey from "../../../Assets/ServicesSVG/survey.svg";
-import surveyColor from "../../../Assets/ServicesSVG/surveyColor.svg";
+// import surveyColor from "../../../Assets/ServicesSVG/surveyColor.svg";
 
 const Services = () => {
   const cardBody =

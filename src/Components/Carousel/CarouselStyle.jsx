@@ -7,14 +7,15 @@ export const MainSwiperCont = styled.div`
   position: relative;
   .swiper {
     /* border: 2px solid yellow; */
-    padding: 0.5rem;
+    padding: 1rem 0;
     z-index: -100;
+    height: 100%;
     /* background: none; */
   }
 
   .swiper-slide {
     /* border: 2px solid; */
-    /* padding: 0.5rem; */
+    height: 100%;
   }
 
   .swiper-button-next,
@@ -76,14 +77,14 @@ export const CarouselStyle = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  height: fit-content;
+  /* height: fit-content; */
   /* background-color: rgb(10, 23, 40); */
   /* background-color: rgba(10, 25, 10, 0.9); */
   /* background-color: rgba(145, 65, 145, 0.6); */
   /* overflow: hidden; */
   /* border: 1px solid rgba(10, 25, 10, 1); */
   /* border-radius: 5px; */
-  padding: 1rem 0.5rem;
+  /* padding: 1rem 0.5rem; */
   min-width: 10rem;
   box-sizing: border-box;
   margin-bottom: 2rem;

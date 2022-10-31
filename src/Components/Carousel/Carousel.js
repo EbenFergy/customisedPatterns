@@ -1,6 +1,5 @@
 import React from "react";
 import { CarouselStyle, MainSwiperCont } from "./CarouselStyle";
-import Cards from "../Cards/Cards";
 import PlainCards from "../Cards/PlainCards";
 // import Swiper core and required modules
 import { Pagination, Scrollbar, A11y, Navigation } from "swiper";

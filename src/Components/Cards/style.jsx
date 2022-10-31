@@ -103,6 +103,7 @@ export const PlainCardsStyle = styled.div`
   height: 25rem;
   box-shadow: ${SHADOWS.CARDSHADOW};
   /* border-top: 1px solid ${COLORS.Blue}; */
+  /* border: 2px solid red; */
 
   :hover {
     border-bottom: 5px solid ${COLORS.Blue};

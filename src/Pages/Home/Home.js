@@ -6,7 +6,7 @@ import Footer from "../../Components/Footer/Footer";
 import Testimonials from "./testimonials/Testimonials";
 import Gallery from "./Gallery/Gallery";
 import NavBar from "../../Components/navBar/NavBar";
-import Clients from "./Clients/Clients";
+// import Clients from "./Clients/Clients";
 import AboutUs from "./AboutUs/AboutUs";
 import PlainHorizontalCards from "../../Components/Cards/PlainHorizontalCards";
 
