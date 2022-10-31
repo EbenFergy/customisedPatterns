@@ -1,6 +1,7 @@
 import React from "react";
 import { CarouselStyle, MainSwiperCont } from "./CarouselStyle";
 import Cards from "../Cards/Cards";
+import PlainCards from "../Cards/PlainCards";
 // import Swiper core and required modules
 import { Pagination, Scrollbar, A11y, Navigation } from "swiper";
 
@@ -69,13 +70,13 @@ const Carousel = ({ carouselObj, Galleria }) => {
         }}
       >
         {carouselObj &&
-          carouselObj.map((results) => (
-            <SwiperSlide key={results.cardTitle}>
+          carouselObj.map((service) => (
+            <SwiperSlide key={service.title}>
               <CarouselStyle>
-                <Cards
-                  cardImage={results.cardImage}
-                  cardTitle={results.cardTitle}
-                  cardBody={results.cardBody}
+                <PlainCards
+                  image={service.image}
+                  title={service.title}
+                  body={service.body}
                 />
               </CarouselStyle>
             </SwiperSlide>

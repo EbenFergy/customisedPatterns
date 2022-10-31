@@ -11,6 +11,7 @@ export const Style = styled.div`
     0px 7px 23px rgba(0, 0, 0, 0.08);
   border-radius: 4px;
   text-align: center;
+  background-color: ${COLORS.White};
 
   .cardHeader {
     margin-bottom: 1rem;
@@ -97,7 +98,7 @@ export const PlainCardsStyle = styled.div`
   /* margin: 0 1rem; */
   max-width: 20rem;
   position: relative;
-  bottom: -5rem;
+  /* bottom: -5rem; */
   background-color: ${COLORS.White};
   height: 25rem;
   box-shadow: ${SHADOWS.CARDSHADOW};
@@ -146,6 +147,7 @@ export const PlainHorzStyle = styled.div`
   position: absolute;
   bottom: 2rem;
   margin: 0 auto;
+  max-width: 95vw;
   /* min-width: 17rem; */
   /* border: 2px solid red; */
   > div {

@@ -8,11 +8,14 @@ const ServicesStyle = styled.div`
   padding: 2rem 1rem;
   color: #2b2b2e;
   background-color: #dee2e7;
-
+  /* 
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  border: 2px solid green;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); */
+  /* border: 2px solid green; */
 
+  .servCarousel {
+    width: 100%;
+  }
   .servicesTitle {
     display: flex;
     flex-direction: column;

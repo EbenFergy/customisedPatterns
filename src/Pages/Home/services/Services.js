@@ -1,5 +1,7 @@
 import React from "react";
 import ServicesStyle from "./ServicesStyle";
+import Carousel from "../../../Components/Carousel/Carousel";
+import SwiperCarousel from "../../../Components/Carousel/SwiperCarousel";
 import PlainCards from "../../../Components/Cards/PlainCards";
 import architect from "../../../Assets/ServicesSVG/architect.svg";
 import architectColor from "../../../Assets/ServicesSVG/architectColor.svg";
@@ -45,13 +47,17 @@ const Services = () => {
   ];
   return (
     <ServicesStyle>
-      {servicesObj.map((service) => (
+      {/* <SwiperCarousel carouselObj={servicesObj} /> */}
+      <div className="servCarousel">
+        <Carousel carouselObj={servicesObj} />
+      </div>
+      {/* {servicesObj.map((service) => (
         <PlainCards
           image={service.image}
           title={service.title}
           body={service.body}
         />
-      ))}
+      ))} */}
     </ServicesStyle>
   );
 };
