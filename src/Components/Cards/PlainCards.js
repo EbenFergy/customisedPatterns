@@ -5,7 +5,7 @@ const PlainCards = ({ image, title, body }) => {
   return (
     <PlainCardsStyle>
       <div className="PlainCardHead">
-        <img src={image} />
+        <img src={image} alt={title} />
       </div>
       <div className="PlainCardTitle">{title}</div>
       <div className="PlainCardBody">{body}</div>
