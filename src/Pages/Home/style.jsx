@@ -19,10 +19,22 @@ const Style = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     position: relative;
     color: #ffffff;
+    padding: 0 1rem;
     /* border: 2px solid yellow; */
+
+    .btnCont {
+      margin-bottom: 3rem;
+    }
+
+    .happyClient {
+      /* width: 100%; */
+      display: flex;
+      justify-content: center;
+      /* border: 2px solid red; */
+    }
   }
 
   #headerTitle {

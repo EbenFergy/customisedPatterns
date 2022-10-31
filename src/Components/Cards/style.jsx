@@ -145,7 +145,8 @@ export const PlainHorzStyle = styled.div`
   display: flex;
   position: absolute;
   bottom: 2rem;
-  margin: 0 1rem;
+  margin: 0 auto;
+  /* min-width: 17rem; */
   /* border: 2px solid red; */
   > div {
     padding: 1.5rem;

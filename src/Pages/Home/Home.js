@@ -49,8 +49,12 @@ const Home = () => {
         </p>
 
         <p>Customized 2D and 3D designs</p>
-        <Button>Learn More</Button>
-        <PlainHorizontalCards />
+        <div className="btnCont">
+          <Button>Learn More</Button>
+        </div>
+        <div className="happyClient">
+          <PlainHorizontalCards />
+        </div>
       </div>
       {/* <Clients /> */}
       <Services />
