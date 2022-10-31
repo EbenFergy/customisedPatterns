@@ -4,8 +4,10 @@ import { PlainHorzStyle } from "./style";
 const PlainHorizontalCards = () => {
   return (
     <PlainHorzStyle>
-      <div className="plain">sdfsdsd</div>
-      <div className="glass">sdsds</div>
+      <div className=" glass">Let's bring your dreams to reality</div>
+      <div className="plain">
+        <div>100+</div> Happy clients
+      </div>
     </PlainHorzStyle>
   );
 };

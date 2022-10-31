@@ -9,7 +9,9 @@ const ServicesStyle = styled.div`
   color: #2b2b2e;
   background-color: #dee2e7;
 
-  /* border: 2px solid green; */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  border: 2px solid green;
 
   .servicesTitle {
     display: flex;

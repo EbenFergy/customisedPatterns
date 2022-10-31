@@ -144,12 +144,22 @@ export const PlainCardsStyle = styled.div`
 export const PlainHorzStyle = styled.div`
   display: flex;
   position: absolute;
-  bottom: 8rem;
-  div {
-    padding: 2rem;
+  bottom: 2rem;
+  margin: 0 1rem;
+  /* border: 2px solid red; */
+  > div {
+    padding: 1.5rem;
   }
   .plain {
     background-color: ${COLORS.Blue};
+    font-weight: 600;
+    /* min-width: 13rem; */
+    /* flex-basis: 30%; */
+    font-size: ${FONTS.small};
+    > div {
+      font-size: ${FONTS.subHeadingSize};
+      font-weight: 600;
+    }
   }
 
   .glass {
@@ -158,6 +168,8 @@ export const PlainHorzStyle = styled.div`
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    /* border: 1px solid rgba(255, 255, 255, 0.3); */
+    font-size: 14px;
+    font-weight: 600;
   }
 `;

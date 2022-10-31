@@ -26,7 +26,7 @@ const Style = styled.div`
   }
 
   #headerTitle {
-    text-align: center;
+    /* text-align: center; */
     font-size: 2.2rem;
     font-weight: 800;
     margin-bottom: 0;
