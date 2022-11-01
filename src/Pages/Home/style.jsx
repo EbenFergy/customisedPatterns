@@ -25,7 +25,7 @@ const Style = styled.div`
     /* border: 2px solid yellow; */
 
     .btnCont {
-      margin-bottom: 3rem;
+      margin-bottom: 5rem;
     }
 
     .happyClient {
