@@ -2,7 +2,7 @@ import React from "react";
 import ServicesStyle from "./ServicesStyle";
 import Carousel from "../../../Components/Carousel/Carousel";
 // import SwiperCarousel from "../../../Components/Carousel/SwiperCarousel";
-// import PlainCards from "../../../Components/Cards/PlainCards";
+import PlainCards from "../../../Components/Cards/PlainCards";
 import architect from "../../../Assets/ServicesSVG/architect.svg";
 // import architectColor from "../../../Assets/ServicesSVG/architectColor.svg";
 import engineering from "../../../Assets/ServicesSVG/engineering.svg";
@@ -51,13 +51,15 @@ const Services = () => {
       <div className="servCarousel">
         <Carousel carouselObj={servicesObj} />
       </div>
-      {/* {servicesObj.map((service) => (
-        <PlainCards
-          image={service.image}
-          title={service.title}
-          body={service.body}
-        />
-      ))} */}
+      <div className="servicesWebView">
+        {servicesObj.map((service) => (
+          <PlainCards
+            image={service.image}
+            title={service.title}
+            body={service.body}
+          />
+        ))}
+      </div>
     </ServicesStyle>
   );
 };

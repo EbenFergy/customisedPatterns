@@ -104,14 +104,21 @@ export const PlainCardsStyle = styled.div`
   box-shadow: ${SHADOWS.CARDSHADOW};
   /* border-top: 1px solid ${COLORS.Blue}; */
   /* border: 2px solid red; */
+  border-bottom: 5px solid ${COLORS.Blue};
 
   :hover {
-    border-bottom: 5px solid ${COLORS.Blue};
     transform: translateZ(0);
     z-index: 2;
 
     .PlainCardTitle {
       color: ${COLORS.Blue};
+    }
+  }
+
+  @media only screen and (min-width: 900px) {
+    border: none;
+    :hover {
+      border-bottom: 5px solid ${COLORS.Blue};
     }
   }
 

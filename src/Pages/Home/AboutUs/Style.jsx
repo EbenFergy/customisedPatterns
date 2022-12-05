@@ -3,14 +3,24 @@ import { FONTS } from "../../../styles/FONTS";
 import { COLORS } from "../../../styles/COLORS";
 
 const Style = styled.div`
-  height: 30rem;
+  height: 28rem;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 0 1rem;
+
+  > div {
+    /* border: 2px solid; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
   h1 {
     font-size: ${FONTS.largeSubHeadingSize};
     color: ${COLORS.FontTitle};
+    /* border: 1px solid; */
+    margin: 0;
   }
 
   p {
@@ -24,12 +34,11 @@ const Style = styled.div`
     text-decoration: none;
     font-size: ${FONTS.subHeadingSize};
     color: ${COLORS.FontTitle};
-    width: 10rem;
+
     /* border: 2px solid; */
 
     div {
-      width: inherit;
-      transition: all 0.5 ease-in;
+      width: 8.5rem;
     }
   }
   a:hover {

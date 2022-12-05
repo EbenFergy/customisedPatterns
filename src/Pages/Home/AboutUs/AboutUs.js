@@ -10,9 +10,11 @@ const AboutUs = () => {
           With a touch of excellence, we customize all designs to your spec.
           From ideas, to design, to engineering, we do all. <br />
         </p>
-        <a href="#homeForm">
-          Partner with us ---> <div></div>
-        </a>
+        <div>
+          <a href="#homeForm">
+            Partner with us ---> <div></div>
+          </a>
+        </div>
       </div>
     </Style>
   );

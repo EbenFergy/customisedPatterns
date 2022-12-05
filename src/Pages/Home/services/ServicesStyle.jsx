@@ -16,6 +16,7 @@ const ServicesStyle = styled.div`
   .servCarousel {
     width: 100%;
   }
+
   .servicesTitle {
     display: flex;
     flex-direction: column;
@@ -30,6 +31,11 @@ const ServicesStyle = styled.div`
     }
   }
 
+  .servicesWebView {
+    display: none;
+    justify-content: center;
+  }
+
   @media only screen and (min-width: 768px) {
     .servicesTitle {
       font-size: ${FONTS.largeSubHeadingSize};
@@ -38,6 +44,15 @@ const ServicesStyle = styled.div`
   @media only screen and (min-width: 960px) {
     .servicesTitle {
       font-size: ${FONTS.largerSubHeadingSize};
+    }
+  }
+
+  @media only screen and (min-width: 900px) {
+    .servCarousel {
+      display: none;
+    }
+    .servicesWebView {
+      display: flex;
     }
   }
 `;
