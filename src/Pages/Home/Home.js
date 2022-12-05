@@ -59,7 +59,9 @@ const Home = () => {
       {/* <Clients /> */}
       <Services />
       <AboutUs />
+      <div className="parallax1"></div>
       <Testimonials />
+      <div className="parallax2"></div>
 
       <div className="leadCaption">
         <p id="leadCaption">

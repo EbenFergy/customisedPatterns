@@ -1,8 +1,12 @@
 import styled from "styled-components";
+import parallaxBG1 from "../../Assets/parallaxBG2.jpeg";
+import parallaxBG2 from "../../Assets/parallaxBG3.jpeg";
 import bgGif from "../../Assets/bgGif3.jpeg";
 
 const Style = styled.div`
   width: 100vw;
+  /* height: 100vh; */
+
   /* height: 80vh; */
   /* border: 2px solid; */
 
@@ -41,6 +45,23 @@ const Style = styled.div`
     font-size: 2.2rem;
     font-weight: 800;
     margin-bottom: 0;
+  }
+
+  .parallax1 {
+    height: 30vh;
+    background: url(${parallaxBG1});
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    background-attachment: fixed;
+  }
+  .parallax2 {
+    height: 30vh;
+    background: url(${parallaxBG2});
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    background-attachment: fixed;
   }
 
   p {

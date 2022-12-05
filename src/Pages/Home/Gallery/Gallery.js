@@ -1,12 +1,12 @@
 import React from "react";
 import Style from "./Style";
 import Carousel from "../../../Components/Carousel/Carousel";
-import img1 from "../../../Assets/Galleria/image 1.png";
-import img2 from "../../../Assets/Galleria/image 2.png";
-import img3 from "../../../Assets/Galleria/image 3.png";
-import img4 from "../../../Assets/Galleria/image 4.png";
-import img5 from "../../../Assets/Galleria/image 5.png";
-import img6 from "../../../Assets/Galleria/image 6.png";
+import img1 from "../../../Assets/Galleria/image_1.png";
+import img2 from "../../../Assets/Galleria/image_2.png";
+import img3 from "../../../Assets/Galleria/image_3.png";
+import img4 from "../../../Assets/Galleria/image_4.png";
+import img5 from "../../../Assets/Galleria/image_5.png";
+import img6 from "../../../Assets/Galleria/image_6.png";
 
 const Galleria = [
   { name: "img1", image: img1 },
