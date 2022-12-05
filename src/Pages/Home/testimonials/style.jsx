@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import BG from "../../../Assets/testimonialImg.webp";
+import { FONTS } from "../../../styles/FONTS";
+import { COLORS } from "../../../styles/COLORS";
 
 const Style = styled.div`
   height: 40rem;
@@ -95,7 +97,8 @@ export const FormStyle = styled.form`
 
   .formTitle {
     margin-bottom: 1rem;
-    font-size: 1.2rem;
+    font-size: ${FONTS.subHeadingSize};
+    color: ${COLORS.FontTitle};
     font-weight: 700;
   }
 

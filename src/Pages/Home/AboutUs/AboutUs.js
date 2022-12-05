@@ -7,9 +7,12 @@ const AboutUs = () => {
       <div>
         <h1>What we offer</h1>
         <p>
-          With a touch of excellence, we customize all your designs to your
-          spec. From ideas to design to engineering, we do all.
+          With a touch of excellence, we customize all designs to your spec.
+          From ideas, to design, to engineering, we do all. <br />
         </p>
+        <a href="#homeForm">
+          Partner with us ---> <div></div>
+        </a>
       </div>
     </Style>
   );
