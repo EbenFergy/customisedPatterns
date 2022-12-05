@@ -1,8 +1,9 @@
 export const FONTS = {
   subHeadingSize: "1.2rem",
   subHeadingWeight: "900",
-  largeSubHeadingSize: "1.5rem",
+  largeSubHeadingSize: "1.85rem",
   largerSubHeadingSize: "2rem",
-  bodySize: "14px",
+  bodySize: "16px",
+  bodyWeight: "300",
   small: "12px",
 };
