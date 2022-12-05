@@ -106,6 +106,7 @@ export const FormStyle = styled.form`
     margin-bottom: 1rem;
     width: 90%;
     padding: 0.5rem 0 0.5rem 0.5rem;
+    font-size: 14px;
   }
 
   Button {
