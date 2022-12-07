@@ -13,7 +13,7 @@ const AboutUs = () => {
         </p>
         <div>
           <a href="#homeForm">
-            Partner with us ---> <div></div>
+            Partner with us ---&gt;<div></div>
           </a>
         </div>
       </div>
