@@ -12,6 +12,7 @@ import PlainHorizontalCards from "../../Components/Cards/PlainHorizontalCards";
 
 const Home = () => {
   const [isHeaderVisible, setIsHeaderVisible] = useState(true);
+  const [displayOS, setDisplayOS] = useState("");
 
   const headerRef = useRef(null);
   // console.log("headerRef", headerRef.current);
@@ -39,6 +40,14 @@ const Home = () => {
     if (headerRef.current) observer.observe(headerRef.current);
   }, [options]);
 
+  const checkOS = () => {
+    if (navigator.userAgent.indexOf("Win") !== -1) setDisplayOS("...Windows");
+    if (navigator.userAgent.indexOf("Mac") !== -1) setDisplayOS("...Mac");
+    if (navigator.userAgent.indexOf("Linux") !== -1) setDisplayOS("...Linux");
+    if (navigator.userAgent.indexOf("Android") !== -1)
+      setDisplayOS("...Android");
+    if (navigator.userAgent.indexOf("like Mac") !== -1) setDisplayOS("...iOS");
+  };
   return (
     <Style>
       <NavBar isHeaderVisible={isHeaderVisible} />
@@ -50,7 +59,8 @@ const Home = () => {
 
         <p>Customized 2D and 3D designs</p>
         <div className="btnCont">
-          <Button>Learn More</Button>
+          <Button onClick={checkOS}>Learn More</Button>
+          {displayOS && <div> {displayOS}</div>}
         </div>
         <div className="happyClient">
           <PlainHorizontalCards />
