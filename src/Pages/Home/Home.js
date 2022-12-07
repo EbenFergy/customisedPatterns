@@ -66,11 +66,11 @@ const Home = () => {
       </div>
       {/* <Clients /> */}
       <Services />
-      {/* {displayOS !== "iOS" && <div className="parallax1"></div>} */}
+      {displayOS !== "iOS" && <div className="parallax1"></div>}
 
       <AboutUs />
       <Testimonials />
-      {/* {displayOS !== "iOS" && <div className="parallax2"></div>} */}
+      {displayOS !== "iOS" && <div className="parallax2"></div>}
 
       <div className="leadCaption">
         <p id="leadCaption">
