@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import parallaxBG1 from "../../Assets/parallaxBG2.jpeg";
-import parallaxBG2 from "../../Assets/parallaxBG3.jpeg";
+import parallaxBG1 from "../../Assets/parallaxBG22.jpg";
+import parallaxBG2 from "../../Assets/parallaxBG2.jpg";
 import bgGif from "../../Assets/bgGif3.jpeg";
 
 const Style = styled.div`
@@ -60,7 +60,7 @@ const Style = styled.div`
     background: url(${parallaxBG2});
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: right;
+    background-position: right top;
     background-attachment: fixed;
   }
 

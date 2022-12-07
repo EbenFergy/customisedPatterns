@@ -58,8 +58,8 @@ const Home = () => {
       </div>
       {/* <Clients /> */}
       <Services />
-      <AboutUs />
       <div className="parallax1"></div>
+      <AboutUs />
       <Testimonials />
       <div className="parallax2"></div>
 
