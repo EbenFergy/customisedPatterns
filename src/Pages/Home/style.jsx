@@ -54,6 +54,7 @@ const Style = styled.div`
     background-size: cover;
     background-position: right;
     background-attachment: fixed;
+    max-width: 100vw;
   }
   .parallax2 {
     height: 30vh;
@@ -62,6 +63,7 @@ const Style = styled.div`
     background-size: cover;
     background-position: right top;
     background-attachment: fixed;
+    max-width: 100vw;
   }
 
   p {
