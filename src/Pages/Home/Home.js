@@ -38,16 +38,15 @@ const Home = () => {
     }, options);
 
     if (headerRef.current) observer.observe(headerRef.current);
+
+    if (navigator.userAgent.indexOf("Win") !== -1) setDisplayOS("Windows");
+    if (navigator.userAgent.indexOf("Mac") !== -1) setDisplayOS("Mac");
+    if (navigator.userAgent.indexOf("Linux") !== -1) setDisplayOS("Linux");
+    if (navigator.userAgent.indexOf("Android") !== -1) setDisplayOS("Android");
+    if (navigator.userAgent.indexOf("like Mac") !== -1) setDisplayOS("iOS");
   }, [options]);
 
-  const checkOS = () => {
-    if (navigator.userAgent.indexOf("Win") !== -1) setDisplayOS("...Windows");
-    if (navigator.userAgent.indexOf("Mac") !== -1) setDisplayOS("...Mac");
-    if (navigator.userAgent.indexOf("Linux") !== -1) setDisplayOS("...Linux");
-    if (navigator.userAgent.indexOf("Android") !== -1)
-      setDisplayOS("...Android");
-    if (navigator.userAgent.indexOf("like Mac") !== -1) setDisplayOS("...iOS");
-  };
+  const checkOS = () => {};
   return (
     <Style>
       <NavBar isHeaderVisible={isHeaderVisible} />
@@ -68,10 +67,11 @@ const Home = () => {
       </div>
       {/* <Clients /> */}
       <Services />
-      <div className="parallax1"></div>
+      {displayOS !== "iOS" && <div className="parallax1"></div>}
+
       <AboutUs />
       <Testimonials />
-      <div className="parallax2"></div>
+      {displayOS !== "iOS" && <div className="parallax2"></div>}
 
       <div className="leadCaption">
         <p id="leadCaption">
