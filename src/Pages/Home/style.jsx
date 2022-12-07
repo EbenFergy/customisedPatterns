@@ -53,7 +53,7 @@ const Style = styled.div`
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
   }
   .parallax2 {
     height: 30vh;
@@ -61,7 +61,7 @@ const Style = styled.div`
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right top;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
   }
 
   p {
