@@ -46,7 +46,7 @@ const Services = () => {
     },
   ];
   return (
-    <ServicesStyle>
+    <ServicesStyle id="homeServices">
       {/* <SwiperCarousel carouselObj={servicesObj} /> */}
       <div className="servCarousel">
         <Carousel carouselObj={servicesObj} />

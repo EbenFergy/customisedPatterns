@@ -19,7 +19,7 @@ const Galleria = [
 
 const Gallery = () => {
   return (
-    <Style>
+    <Style id="homeGallery">
       <p>Gallery</p>
       <div className="titleUnderline"></div>
       <Carousel Galleria={Galleria} />

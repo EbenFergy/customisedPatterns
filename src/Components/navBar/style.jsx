@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import { FONTS } from "../../styles/FONTS";
+import { COLORS } from "../../styles/COLORS";
 
 const Style = styled.div`
   display: flex;
@@ -26,6 +28,11 @@ const Style = styled.div`
     /* border: 2px solid red; */
   }
 
+  .navLinks,
+  .contactUs {
+    display: none;
+  }
+
   @media only screen and (min-width: 500px) {
     padding: 0.75rem 2rem;
   }
@@ -36,6 +43,27 @@ const Style = styled.div`
 
   @media only screen and (min-width: 960px) {
     padding: 0.75rem 8rem;
+
+    a {
+      text-decoration: none;
+      color: ${COLORS.Gray};
+    }
+    .navLinks {
+      display: flex;
+      list-style: none;
+      justify-content: space-around;
+      width: 25rem;
+
+      li a {
+        text-decoration: none;
+        color: ${COLORS.Gray};
+        font-size: ${FONTS.smallBodySize};
+      }
+    }
+
+    .contactUs {
+      display: block;
+    }
   }
 `;
 export default Style;

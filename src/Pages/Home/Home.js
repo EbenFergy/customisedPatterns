@@ -49,7 +49,7 @@ const Home = () => {
   return (
     <Style>
       <NavBar isHeaderVisible={isHeaderVisible} />
-      <div className="header" ref={headerRef}>
+      <div className="header" id="homeHeader" ref={headerRef}>
         <p id="headerTitle">
           High Definition <br />
           sketches

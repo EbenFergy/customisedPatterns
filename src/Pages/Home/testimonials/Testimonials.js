@@ -56,7 +56,7 @@ const Testimonials = () => {
   setTimeout(selectTestimony, 5000);
 
   return (
-    <Style>
+    <Style id="homeTestimonials">
       <div className="testHeader"></div>
 
       <div className="testBody">
