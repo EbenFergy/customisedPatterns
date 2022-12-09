@@ -57,8 +57,7 @@ const Home = () => {
 
         <p>Customized 2D and 3D designs</p>
         <div className="btnCont">
-          <Button>Learn More</Button>
-          {displayOS && <div> {displayOS}</div>}
+          <Button> Learn More </Button>
         </div>
         <div className="happyClient">
           <PlainHorizontalCards />

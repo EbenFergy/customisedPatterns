@@ -15,5 +15,9 @@ const HamburgerIconsStyle = styled.div`
   .closeIcon {
     ${({ openMenu }) => (openMenu ? `display: block` : `display: none`)};
   }
+
+  @media only screen and (min-width: 1000px) {
+    display: none;
+  }
 `;
 export default HamburgerIconsStyle;

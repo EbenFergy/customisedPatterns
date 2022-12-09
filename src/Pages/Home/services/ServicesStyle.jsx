@@ -37,11 +37,15 @@ const ServicesStyle = styled.div`
   }
 
   @media only screen and (min-width: 768px) {
+    padding: 4rem 1rem;
+
     .servicesTitle {
       font-size: ${FONTS.largeSubHeadingSize};
     }
   }
   @media only screen and (min-width: 960px) {
+    padding: 7rem 1rem;
+
     .servicesTitle {
       font-size: ${FONTS.largerSubHeadingSize};
     }

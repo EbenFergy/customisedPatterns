@@ -20,6 +20,7 @@ const Style = styled.div`
     position: relative;
     padding: 1rem 0;
     height: fit-content;
+    /* border: 2px solid tan; */
   }
 
   .testBody {
@@ -56,7 +57,7 @@ const Style = styled.div`
   }
 
   @media only screen and (min-width: 768px) {
-    height: 30rem;
+    height: 40rem;
 
     .testBody {
       display: flex;
@@ -70,7 +71,7 @@ const Style = styled.div`
     .testimonialFormCont {
       /* border: 2px solid blue; */
       height: 100%;
-      padding-top: 2rem;
+      padding: 6rem 0;
     }
 
     .testHeader {

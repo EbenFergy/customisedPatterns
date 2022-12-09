@@ -29,5 +29,13 @@ const Style = styled.div`
   @media only screen and (min-width: 500px) {
     padding: 0.75rem 2rem;
   }
+
+  @media only screen and (min-width: 768px) {
+    padding: 0.75rem 4rem;
+  }
+
+  @media only screen and (min-width: 960px) {
+    padding: 0.75rem 8rem;
+  }
 `;
 export default Style;

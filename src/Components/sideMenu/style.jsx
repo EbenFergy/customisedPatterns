@@ -9,7 +9,6 @@ const Style = styled.div`
   background-color: rgb(2, 61, 147, 0.98);
   width: ${({ openMenu }) => (openMenu ? "78vw" : "0vw")};
   overflow: hidden;
-  flex-direction: column;
   align-items: center;
   padding: 4rem 0;
   transition: width 0.5s ease-in-out;
@@ -48,6 +47,10 @@ const Style = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  @media only screen and (min-width: 1000px) {
+    display: none;
   }
 `;
 

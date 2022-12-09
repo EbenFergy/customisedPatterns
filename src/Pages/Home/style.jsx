@@ -11,10 +11,15 @@ const Style = styled.div`
   /* border: 2px solid; */
 
   .header {
+    cursor: crosshair;
     width: 100vw;
     height: 40rem;
     background-size: cover;
-    background: linear-gradient(rgba(2, 18, 44, 0.7), rgba(2, 26, 63, 0.7)),
+    background: linear-gradient(
+        to right,
+        rgba(2, 18, 44, 1),
+        rgba(2, 26, 63, 0.7)
+      ),
       url(${bgGif});
     background-repeat: no-repeat;
     background-size: cover;
@@ -26,6 +31,7 @@ const Style = styled.div`
     position: relative;
     color: #ffffff;
     padding: 0 1rem;
+    transition: all 0.8s;
     /* border: 2px solid yellow; */
 
     .btnCont {
@@ -110,9 +116,15 @@ const Style = styled.div`
     }
   }
 
+  @media only screen and (min-width: 760px) {
+    .header {
+      padding: 0 4rem;
+    }
+  }
   @media only screen and (min-width: 960px) {
     .header {
       height: 90vh;
+      padding: 0 8rem;
     }
 
     #headerTitle {

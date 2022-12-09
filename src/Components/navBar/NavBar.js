@@ -9,6 +9,7 @@ const NavBar = ({ isHeaderVisible }) => {
       <div className="logoCont">
         <img src={logo} alt="logo" />
       </div>
+
       <HamburgerIcons />
     </Style>
   );
