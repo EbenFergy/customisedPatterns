@@ -46,5 +46,14 @@ const Style = styled.div`
       border-bottom: 2px solid;
     }
   }
+
+  @media only screen and (min-width: 768px) {
+    h1 {
+      font-size: ${FONTS.largerSubHeadingSize};
+    }
+    p {
+      font-size: ${FONTS.largeSubHeadingSize};
+    }
+  }
 `;
 export default Style;

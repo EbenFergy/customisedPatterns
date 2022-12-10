@@ -21,9 +21,11 @@ const NavBar = ({ isHeaderVisible }) => {
           <a href="#homeGallery">Gallery</a>
         </li>
       </ul>
-      <Button dormant={true} className="contactUs">
-        <a href="#homeTestimonials">Contact Us</a>
-      </Button>
+      <a href="#homeTestimonials">
+        <Button dormant={true} className="contactUs">
+          Contact Us
+        </Button>
+      </a>
       <HamburgerIcons />
     </Style>
   );

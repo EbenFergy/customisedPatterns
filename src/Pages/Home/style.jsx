@@ -55,7 +55,8 @@ const Style = styled.div`
 
   .parallax1 {
     height: 30vh;
-    background: url(${parallaxBG1});
+    background: linear-gradient(rgba(2, 18, 44, 0.7), rgba(2, 26, 63, 0.7)),
+      url(${parallaxBG1});
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;
@@ -63,7 +64,8 @@ const Style = styled.div`
   }
   .parallax2 {
     height: 30vh;
-    background: url(${parallaxBG2});
+    background: linear-gradient(rgba(2, 18, 44, 0.7), rgba(2, 26, 63, 0.7)),
+      url(${parallaxBG2});
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right top;
