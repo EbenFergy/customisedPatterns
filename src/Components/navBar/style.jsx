@@ -58,6 +58,10 @@ const Style = styled.div`
         text-decoration: none;
         color: ${COLORS.Gray};
         font-size: ${FONTS.smallBodySize};
+
+        :hover {
+          text-decoration: underline;
+        }
       }
     }
 

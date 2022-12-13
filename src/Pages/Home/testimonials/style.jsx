@@ -123,8 +123,8 @@ export const FormStyle = styled.form`
   }
 
   @media only screen and (min-width: 768px) {
-    max-width: 28rem;
-    height: 95%;
+    max-width: 30rem;
+    height: 99%;
     right: 0;
   }
 `;

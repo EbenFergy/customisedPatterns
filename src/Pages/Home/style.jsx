@@ -2,6 +2,7 @@ import styled from "styled-components";
 import parallaxBG1 from "../../Assets/parallaxBG22.jpg";
 import parallaxBG2 from "../../Assets/parallaxBG2.jpg";
 import bgGif from "../../Assets/bgGif3.jpeg";
+import { FONTS } from "../../styles/FONTS";
 
 const Style = styled.div`
   width: 100vw;
@@ -63,7 +64,11 @@ const Style = styled.div`
     background-attachment: fixed;
   }
   .parallax2 {
-    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 50vh;
     background: linear-gradient(rgba(2, 18, 44, 0.7), rgba(2, 26, 63, 0.7)),
       url(${parallaxBG2});
     background-repeat: no-repeat;
@@ -86,7 +91,7 @@ const Style = styled.div`
     margin: 2rem 0;
 
     #leadCaption {
-      font-size: 14px;
+      /* font-size: 14px; */
       font-weight: 400;
       color: #6b6b7b;
     }
@@ -121,6 +126,18 @@ const Style = styled.div`
   @media only screen and (min-width: 760px) {
     .header {
       padding: 0 4rem;
+    }
+
+    .leadCaption {
+      width: 50%;
+      background-color: rgba(241, 241, 241, 0.8);
+
+      #leadCaption {
+        font-size: ${FONTS.mediumSubHeadingSize};
+        line-height: calc(1.5 * ${FONTS.largeSubHeadingSize});
+
+        /* border: 2px solid red; */
+      }
     }
   }
   @media only screen and (min-width: 960px) {

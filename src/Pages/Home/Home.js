@@ -69,18 +69,35 @@ const Home = () => {
 
       <AboutUs />
       <Testimonials />
-      {displayOS !== "iOS" && <div className="parallax2"></div>}
+      {displayOS !== "iOS" && (
+        <div className="parallax2">
+          <div className="leadCaption">
+            <div id="leadCaption">
+              "With over 15 years of experience in delivering quality designs,
+              we are sure to provide what you want with a quality compared to
+              none"
+            </div>
 
-      <div className="leadCaption">
-        <p id="leadCaption">
-          "With over 15 years of experience in delivering quality designs, we
-          are sure to provide what you want with a quality compared to none"
-        </p>
+            <p id="leadTitle">
+              Arch Omofoma Osagie <br /> <span>Lead Architect</span>
+            </p>
+          </div>
+        </div>
+      )}
 
-        <p id="leadTitle">
-          Arch Omofoma Osagie <br /> <span>Lead Architect</span>
-        </p>
-      </div>
+      {displayOS === "iOS" && (
+        <div className="leadCaption">
+          <div id="leadCaption">
+            "With over 15 years of experience in delivering quality designs, we
+            are sure to provide what you want with a quality compared to none"
+          </div>
+
+          <p id="leadTitle">
+            Arch Omofoma Osagie <br /> <span>Lead Architect</span>
+          </p>
+        </div>
+      )}
+
       <Gallery />
       <Footer />
     </Style>

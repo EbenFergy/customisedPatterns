@@ -19,6 +19,7 @@ const Style = styled.div`
   h1 {
     font-size: ${FONTS.largeSubHeadingSize};
     color: ${COLORS.FontTitle};
+    font-weight: 400;
     /* border: 1px solid; */
     margin: 0;
   }
@@ -48,11 +49,15 @@ const Style = styled.div`
   }
 
   @media only screen and (min-width: 768px) {
+    .aboutUsText {
+      width: 60%;
+    }
     h1 {
-      font-size: ${FONTS.largerSubHeadingSize};
+      font-size: ${FONTS.largestSubHeadingSize};
     }
     p {
-      font-size: ${FONTS.largeSubHeadingSize};
+      font-size: ${FONTS.mediumSubHeadingSize};
+      line-height: calc(1.5 * ${FONTS.largeSubHeadingSize});
     }
   }
 `;
