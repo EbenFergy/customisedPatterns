@@ -7,7 +7,7 @@ const Style = styled.div`
   top: 0;
   bottom: 0;
   background-color: rgb(2, 61, 147, 0.98);
-  width: ${({ openMenu }) => (openMenu ? "78vw" : "0vw")};
+  width: 78vw;
   overflow: hidden;
   align-items: center;
   padding: 4rem 0;
@@ -19,7 +19,6 @@ const Style = styled.div`
   div {
     padding: 1.5rem 1rem;
     margin: 1rem;
-    opacity: ${({ openMenu }) => (openMenu ? "1" : "0")};
     transition: opacity 0.3s;
     border-bottom: 0.8px solid rgba(255, 255, 255, 0.5);
     cursor: pointer;

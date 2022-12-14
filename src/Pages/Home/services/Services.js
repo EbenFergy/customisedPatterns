@@ -20,7 +20,7 @@ const Services = () => {
 
   const servicesObj = [
     {
-      title: "Architect",
+      title: "Architecture",
       image: architect,
       body: cardBody,
     },

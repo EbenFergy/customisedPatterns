@@ -130,7 +130,7 @@ const Style = styled.div`
 
     .leadCaption {
       width: 50%;
-      background-color: rgba(241, 241, 241, 0.8);
+      background-color: rgba(241, 241, 241, 0.82);
 
       #leadCaption {
         font-size: ${FONTS.mediumSubHeadingSize};
