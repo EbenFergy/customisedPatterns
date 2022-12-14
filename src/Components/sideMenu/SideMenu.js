@@ -2,43 +2,52 @@ import React, { useContext } from "react";
 import Style from "./style";
 import SideMenuContext from "../../Store/SideMenuContext";
 import Button from "../Button/Button";
-import ReactDOM from "react-dom";
-import BackDropStyle from "../BackDrop/BackDrop";
 
-const BackDrop = () => {
-  return <BackDropStyle></BackDropStyle>;
-};
 const SideMenu = () => {
-  const { openMenu } = useContext(SideMenuContext);
+  const { menuHandler } = useContext(SideMenuContext);
 
   return (
-    <>
-      {openMenu &&
-        ReactDOM.createPortal(
-          <Style>
-            <div className="navBtns">
-              <a href="#homeHeader">Home</a>
-            </div>
-            <div className="navBtns">
-              <a href="#homeServices">Services</a>
-            </div>
-            <div className="navBtns">
-              <a href="#homeGallery">Gallery</a>
-            </div>
-            <a href="#homeTestimonials">
-              <Button dormant={true} className="contactUs">
-                Contact Us
-              </Button>
-            </a>
-          </Style>,
-          document.getElementById("modal")
-        )}
-      {openMenu &&
-        ReactDOM.createPortal(
-          <BackDrop />,
-          document.getElementById("backdrop")
-        )}
-    </>
+    <Style onClick={menuHandler}>
+      <svg
+        width="31"
+        height="33"
+        viewBox="0 0 31 33"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        className="closeIcon"
+      >
+        <line
+          y1="-1"
+          x2="42.45"
+          y2="-1"
+          transform="matrix(-0.683157 0.730272 0.43379 0.901014 30 2)"
+          stroke="white"
+          stroke-width="4"
+        />
+        <line
+          y1="-1"
+          x2="42.45"
+          y2="-1"
+          transform="matrix(0.683157 0.730272 -0.43379 0.901014 1 2)"
+          stroke="white"
+          stroke-width="4"
+        />
+      </svg>
+      <a href="#homeHeader">
+        <div className="navBtns">Home</div>
+      </a>
+      <a href="#homeServices">
+        <div className="navBtns">Services</div>
+      </a>
+      <a href="#homeGallery">
+        <div className="navBtns">Gallery</div>
+      </a>
+      <a href="#homeTestimonials" id="sideContact">
+        <Button dormant={true} className="contactUs">
+          Contact Us
+        </Button>
+      </a>
+    </Style>
   );
 };
 

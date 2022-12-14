@@ -12,10 +12,6 @@ const HamburgerIconsStyle = styled.div`
     /* border: 2px solid; */
   }
 
-  .closeIcon {
-    ${({ openMenu }) => (openMenu ? `display: block` : `display: none`)};
-  }
-
   @media only screen and (min-width: 1000px) {
     display: none;
   }

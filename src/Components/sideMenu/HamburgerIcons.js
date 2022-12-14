@@ -41,31 +41,6 @@ const HamburgerIcons = () => {
           stroke-linejoin="round"
         />
       </svg>
-      <svg
-        width="31"
-        height="33"
-        viewBox="0 0 31 33"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        className="closeIcon"
-      >
-        <line
-          y1="-1"
-          x2="42.45"
-          y2="-1"
-          transform="matrix(-0.683157 0.730272 0.43379 0.901014 30 2)"
-          stroke="white"
-          stroke-width="4"
-        />
-        <line
-          y1="-1"
-          x2="42.45"
-          y2="-1"
-          transform="matrix(0.683157 0.730272 -0.43379 0.901014 1 2)"
-          stroke="white"
-          stroke-width="4"
-        />
-      </svg>
     </HamburgerIconsStyle>
   );
 };

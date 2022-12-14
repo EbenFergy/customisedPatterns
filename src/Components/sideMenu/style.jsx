@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { FONTS } from "../../styles/FONTS";
 
 const Style = styled.div`
   /* height: 100vh; */
@@ -7,12 +8,16 @@ const Style = styled.div`
   top: 0;
   bottom: 0;
   background-color: rgb(2, 61, 147, 0.98);
-  width: 78vw;
+  width: 100vw;
   overflow: hidden;
   align-items: center;
   padding: 4rem 0;
   transition: width 0.5s ease-in-out;
   color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   z-index: 10;
   /* border: 2px solid; */
 
@@ -36,6 +41,24 @@ const Style = styled.div`
       height: 1.3rem;
     }
   }
+  a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: ${FONTS.mediumSubHeadingSize};
+    /* border: 2px solid white; */
+  }
+  .closeIcon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1.5rem 1.5rem 0 0;
+  }
+
+  #sideContact {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 3rem;
+  }
 
   .hamburgerIcon {
     display: none;
@@ -46,6 +69,14 @@ const Style = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  .navs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid green;
   }
 
   @media only screen and (min-width: 1000px) {
