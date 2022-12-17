@@ -89,11 +89,14 @@ const Style = styled.div`
     text-align: center;
     font-size: 1.2rem;
     margin: 2rem 0;
+    max-height: 90%;
+    /* border: 2px solid red; */
 
     #leadCaption {
       /* font-size: 14px; */
       font-weight: 400;
       color: #6b6b7b;
+      max-height: 90%;
     }
 
     #leadTitle {
@@ -129,7 +132,7 @@ const Style = styled.div`
     }
 
     .leadCaption {
-      width: 50%;
+      width: 75%;
       background-color: rgba(241, 241, 241, 0.82);
 
       #leadCaption {
