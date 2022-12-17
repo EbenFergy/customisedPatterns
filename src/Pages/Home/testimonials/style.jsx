@@ -103,11 +103,17 @@ export const FormStyle = styled.form`
     font-weight: 700;
   }
 
-  input {
+  input,
+  textarea {
     margin-bottom: 1rem;
     width: 90%;
     padding: 0.5rem 0 0.5rem 0.5rem;
-    font-size: 14px;
+    font-size: 16px;
+    font-family: inherit;
+  }
+
+  textarea {
+    height: 40%;
   }
 
   Button {
