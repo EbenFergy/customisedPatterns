@@ -5,7 +5,7 @@ import { Formik, Form } from "formik";
 import * as Yup from "yup";
 import FormikControl from "../../../Components/Form/FormikControl";
 
-const Form = () => {
+const TestimonialForm = () => {
   const initialValues = { yourName: "", yourEmail: "", yourMessage: "" };
 
   const validationSchema = Yup.object({
@@ -20,6 +20,22 @@ const Form = () => {
   };
   return (
     <FormStyle id="homeForm">
+      <Formik
+        initialValues={initialValues}
+        validationSchema={validationSchema}
+        onSubmit={onSubmit}
+      >
+        <Form>
+          <FormikControl control="input" label="Your name" name="yourName" />
+          <FormikControl control="input" label="Email" name="yourEmail" />
+          <FormikControl
+            control="textarea"
+            label="Your Message"
+            name="yourMessage"
+          />
+        </Form>
+      </Formik>
+
       <div className="formTitle">Talk to an Expert</div>
       <input type="text" name="name" id="name" placeholder="Your name" />
 
@@ -38,4 +54,4 @@ const Form = () => {
   );
 };
 
-export default Form;
+export default TestimonialForm;
