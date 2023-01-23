@@ -1,15 +1,20 @@
 import styled from "styled-components";
+import { COLORS } from "../../styles/COLORS";
 
 export const FormCont = styled.div`
   display: flex;
-  flex-direction: column;
-  /* align-items: center; */
+  align-items: center;
   justify-content: center;
-  border: 2px solid #07a884;
-  padding: 2rem;
-  width: 50vw;
-  max-width: 18rem;
+  /* border: 2px solid #07a884; */
+  /* padding: 1rem; */
+  width: 90%;
+  /* max-width: 18rem; */
 
+  .formikForm {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
   .passwordWrapper {
     /* border: 2px solid red; */
     display: flex;
@@ -32,6 +37,10 @@ export const FormCont = styled.div`
       }
     }
   }
+
+  button {
+    margin: auto;
+  }
 `;
 export const InputStyle = styled.div`
   display: flex;
@@ -43,14 +52,20 @@ export const InputStyle = styled.div`
   textarea,
   select {
     padding: 0.5rem 1rem;
-    border: 1px solid #07a884;
+    border: 1px solid ${COLORS.DarkGray};
     font-family: inherit;
+    margin: 0;
+    width: 100%;
+  }
+  textarea {
+    height: 5.5rem;
   }
 `;
 
 export const ErrorStyle = styled.div`
   color: red;
   font-size: 0.8rem;
+  margin: 0;
 `;
 
 export const Button = styled.button`

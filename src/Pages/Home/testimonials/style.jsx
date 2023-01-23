@@ -3,7 +3,7 @@ import BG from "../../../Assets/testimonialImg.webp";
 import { FONTS } from "../../../styles/FONTS";
 import { COLORS } from "../../../styles/COLORS";
 
-const Style = styled.div`
+export const Style = styled.div`
   height: 40rem;
   /* border: 2px solid green; */
   position: relative;
@@ -80,11 +80,11 @@ const Style = styled.div`
   }
 `;
 
-export const FormStyle = styled.form`
+export const FormStyle = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem 2rem;
+  padding: 2rem 1.5rem;
   min-width: 14rem;
   max-width: 25rem;
   margin: auto;
@@ -112,10 +112,6 @@ export const FormStyle = styled.form`
     font-family: inherit;
   }
 
-  textarea {
-    height: 40%;
-  }
-
   Button {
     width: 90%;
   }
@@ -134,5 +130,3 @@ export const FormStyle = styled.form`
     right: 0;
   }
 `;
-
-export default Style;

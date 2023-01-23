@@ -7,24 +7,24 @@ const Style = styled.div`
   left: 0;
   top: 0;
   bottom: 0;
-  background-color: rgb(2, 61, 147, 0.97);
+  background-color: rgb(2, 61, 147, 0.98);
   width: 100vw;
   overflow: hidden;
   align-items: center;
   padding: 4rem 0;
+  transition: width 0.5s ease-in-out;
   color: rgb(255, 255, 255);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   z-index: 10;
-  transition: all 2s ease-in-out;
-
   /* border: 2px solid; */
 
   div {
     padding: 1.5rem 1rem;
     margin: 1rem;
+    transition: opacity 0.3s;
     border-bottom: 0.8px solid rgba(255, 255, 255, 0.5);
     cursor: pointer;
   }

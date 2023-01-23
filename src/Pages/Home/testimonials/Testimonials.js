@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import Style from "./style";
+import { Style } from "./style";
 import HorizontalCards from "../../../Components/Cards/HorizontalCards";
 import clientImg from "../../../Assets/clientImg.jpeg";
-import Form from "./Form";
+import TForm from "./TForm";
 
 const testimonyObj = [
   {
@@ -73,7 +73,7 @@ const Testimonials = () => {
           </div>
         </div>
         <div className="testimonialFormCont">
-          <Form />
+          <TForm />
         </div>
       </div>
     </Style>
