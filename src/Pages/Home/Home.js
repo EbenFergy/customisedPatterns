@@ -1,4 +1,4 @@
-import React, { useState, useRef, useMemo, useEffect } from "react";
+import React, { useReducer, useRef, useMemo, useEffect } from "react";
 import Style from "./style";
 import Button from "../../Components/Button/Button";
 import Services from "./services/Services";
@@ -10,9 +10,24 @@ import NavBar from "../../Components/navBar/NavBar";
 import AboutUs from "./AboutUs/AboutUs";
 import PlainHorizontalCards from "../../Components/Cards/PlainHorizontalCards";
 
+const initialState = {
+  isHeaderVisible: true,
+  displayOS: "",
+};
+
+const reducerHandler = (state, action) => {
+  switch (action.type) {
+    case "SET_HEADERVISIBLE":
+      return { [action.key]: action.value };
+    case "SET_DISPLAYOS":
+      return { [action.key]: action.value };
+    default:
+      return state;
+  }
+};
+
 const Home = () => {
-  const [isHeaderVisible, setIsHeaderVisible] = useState(true);
-  const [displayOS, setDisplayOS] = useState("");
+  const [state, dispatch] = useReducer(reducerHandler, initialState);
 
   const headerRef = useRef(null);
   // console.log("headerRef", headerRef.current);
@@ -31,24 +46,57 @@ const Home = () => {
   useEffect(() => {
     const observer = new IntersectionObserver((entries, observer) => {
       if (entries[0].isIntersecting) {
-        setIsHeaderVisible(true);
+        dispatch({
+          type: "SET_HEADERVISIBLE",
+          value: true,
+          key: "isHeaderVisible",
+        });
       } else {
-        setIsHeaderVisible(false);
+        dispatch({
+          type: "SET_HEADERVISIBLE",
+          value: false,
+          key: "isHeaderVisible",
+        });
       }
     }, options);
 
     if (headerRef.current) observer.observe(headerRef.current);
 
-    navigator.userAgent.indexOf("Win") !== -1 && setDisplayOS("Windows");
-    navigator.userAgent.indexOf("Mac") !== -1 && setDisplayOS("Mac");
-    navigator.userAgent.indexOf("Linux") !== -1 && setDisplayOS("Linux");
-    navigator.userAgent.indexOf("Android") !== -1 && setDisplayOS("Android");
-    navigator.userAgent.indexOf("like Mac") !== -1 && setDisplayOS("iOS");
+    navigator.userAgent.indexOf("Win") !== -1 &&
+      dispatch({
+        type: "SET_DISPLAYOS",
+        value: "Windows",
+        key: "displayOS",
+      });
+    navigator.userAgent.indexOf("Mac") !== -1 &&
+      dispatch({
+        type: "SET_DISPLAYOS",
+        value: "Mac",
+        key: "displayOS",
+      });
+    navigator.userAgent.indexOf("Linux") !== -1 &&
+      dispatch({
+        type: "SET_DISPLAYOS",
+        value: "Linux",
+        key: "displayOS",
+      });
+    navigator.userAgent.indexOf("Android") !== -1 &&
+      dispatch({
+        type: "SET_DISPLAYOS",
+        value: "Android",
+        key: "displayOS",
+      });
+    navigator.userAgent.indexOf("like Mac") !== -1 &&
+      dispatch({
+        type: "SET_DISPLAYOS",
+        value: "iOS",
+        key: "displayOS",
+      });
   }, [options]);
 
   return (
     <Style>
-      <NavBar isHeaderVisible={isHeaderVisible} />
+      <NavBar isHeaderVisible={state.isHeaderVisible} />
       <div className="header" id="homeHeader" ref={headerRef}>
         <p id="headerTitle">
           High Definition <br />
@@ -65,11 +113,11 @@ const Home = () => {
       </div>
       {/* <Clients /> */}
       <Services />
-      {displayOS !== "iOS" && <div className="parallax1"></div>}
+      {state.displayOS !== "iOS" && <div className="parallax1"></div>}
 
       <AboutUs />
       <Testimonials />
-      {displayOS !== "iOS" && (
+      {state.displayOS !== "iOS" && (
         <div className="parallax2">
           <div className="leadCaption">
             <div id="leadCaption">
@@ -85,7 +133,7 @@ const Home = () => {
         </div>
       )}
 
-      {displayOS === "iOS" && (
+      {state.displayOS === "iOS" && (
         <div className="leadCaption">
           <div id="leadCaption">
             "With over 15 years of experience in delivering quality designs, we
